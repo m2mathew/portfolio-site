@@ -31767,6 +31767,59 @@ module.exports = React.createClass({
 'use strict';
 
 var React = require('react');
+var Backbone = require('backbone');
+
+module.exports = React.createClass({
+	displayName: 'exports',
+
+	getInitialState: function getInitialState() {
+		return {
+			links: []
+		};
+	},
+
+	render: function render() {
+		var currentPage = Backbone.history.getFragment();
+
+		var links = [React.createElement(
+			'li',
+			{ key: 'home', className: currentPage === '' ? 'active nav-link' : 'nav-link' },
+			React.createElement(
+				'a',
+				{ href: '#' },
+				'Home'
+			)
+		), React.createElement(
+			'li',
+			{ key: 'resume', className: currentPage === 'resume' ? 'active nav-link' : 'nav-link' },
+			React.createElement(
+				'a',
+				{ href: '#resume' },
+				'Resume'
+			)
+		)];
+
+		return React.createElement(
+			'div',
+			{ className: 'nav-bar' },
+			React.createElement(
+				'h2',
+				null,
+				'Nav'
+			),
+			React.createElement(
+				'ul',
+				null,
+				links
+			)
+		);
+	}
+});
+
+},{"backbone":1,"react":161}],164:[function(require,module,exports){
+'use strict';
+
+var React = require('react');
 
 module.exports = React.createClass({
 	displayName: 'exports',
@@ -31775,18 +31828,18 @@ module.exports = React.createClass({
 
 		return React.createElement(
 			'div',
-			{ className: 'nav-bar' },
+			{ className: 'container resume-box' },
 			React.createElement(
 				'h2',
 				null,
-				'Navigation!'
+				'Resume!'
 			)
 		);
 	}
 
 });
 
-},{"react":161}],164:[function(require,module,exports){
+},{"react":161}],165:[function(require,module,exports){
 'use strict';
 
 var React = require('react');
@@ -31798,6 +31851,7 @@ window.jQuery = $;
 
 var HomeComponent = require('./components/HomeComponent');
 var NavigationComponent = require('./components/NavigationComponent');
+var ResumeComponent = require('./components/ResumeComponent');
 
 var app = document.getElementById('app');
 var nav = document.getElementById('nav');
@@ -31805,11 +31859,13 @@ var nav = document.getElementById('nav');
 var Router = Backbone.Router.extend({
 	routes: {
 		'': 'home',
-		'history': 'history',
-		'schools': 'schools'
+		'resume': 'resume'
 	},
 	home: function home() {
 		ReactDOM.render(React.createElement(HomeComponent, null), app);
+	},
+	resume: function resume() {
+		ReactDOM.render(React.createElement(ResumeComponent, null), app);
 	}
 });
 
@@ -31818,7 +31874,7 @@ Backbone.history.start();
 
 ReactDOM.render(React.createElement(NavigationComponent, { router: r }), nav);
 
-},{"./components/HomeComponent":162,"./components/NavigationComponent":163,"backbone":1,"jquery":4,"react":161,"react-dom":5}]},{},[164])
+},{"./components/HomeComponent":162,"./components/NavigationComponent":163,"./components/ResumeComponent":164,"backbone":1,"jquery":4,"react":161,"react-dom":5}]},{},[165])
 
 
 //# sourceMappingURL=bundle.js.map

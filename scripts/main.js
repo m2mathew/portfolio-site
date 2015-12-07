@@ -9,6 +9,7 @@ window.jQuery = $;
 
 let HomeComponent = require('./components/HomeComponent');
 let NavigationComponent = require('./components/NavigationComponent');
+let ResumeComponent = require('./components/ResumeComponent');
 
 let app = document.getElementById('app');
 let nav = document.getElementById('nav');
@@ -16,12 +17,16 @@ let nav = document.getElementById('nav');
 let Router = Backbone.Router.extend({
 	routes: {
 		'': 'home',
-		'history': 'history',
-		'schools': 'schools'
+		'resume': 'resume'
 	},
 	home: () => {
 		ReactDOM.render(
 			<HomeComponent />, app
+		);
+	},
+	resume: () => {
+		ReactDOM.render(
+			<ResumeComponent />, app
 		);
 	}
 });
