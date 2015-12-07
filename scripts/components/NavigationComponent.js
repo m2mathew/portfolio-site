@@ -5,9 +5,9 @@ let Backbone = require('backbone');
 
 module.exports = React.createClass({
 	getInitialState() {
-	    return {
-	        links: []
-	    };
+		return {
+			links: []
+		};
 	},
 
 	render () {
@@ -20,11 +20,23 @@ module.exports = React.createClass({
 
 
 		return (
-			<div className="nav-bar">
-				<h2>Nav</h2>
-				<ul>
-					{links}
-				</ul>
+			<div className="container-fluid">
+
+				<div className="navbar-header">
+					<button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span className="sr-only">Toggle navigation</span>
+						<span className="icon-bar"></span>
+						<span className="icon-bar"></span>
+						<span className="icon-bar"></span>
+					</button>
+					<a className="navbar-brand" href="#">Michael D. Mathew</a>
+				</div>
+
+				<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul className="nav navbar-nav navbar-right">
+						{links}
+					 </ul>
+				</div>
 			</div>
 		);
 	}

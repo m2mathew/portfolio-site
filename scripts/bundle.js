@@ -31801,16 +31801,36 @@ module.exports = React.createClass({
 
 		return React.createElement(
 			'div',
-			{ className: 'nav-bar' },
+			{ className: 'container-fluid' },
 			React.createElement(
-				'h2',
-				null,
-				'Nav'
+				'div',
+				{ className: 'navbar-header' },
+				React.createElement(
+					'button',
+					{ type: 'button', className: 'navbar-toggle collapsed', 'data-toggle': 'collapse', 'data-target': '#bs-example-navbar-collapse-1', 'aria-expanded': 'false' },
+					React.createElement(
+						'span',
+						{ className: 'sr-only' },
+						'Toggle navigation'
+					),
+					React.createElement('span', { className: 'icon-bar' }),
+					React.createElement('span', { className: 'icon-bar' }),
+					React.createElement('span', { className: 'icon-bar' })
+				),
+				React.createElement(
+					'a',
+					{ className: 'navbar-brand', href: '#' },
+					'Michael D. Mathew'
+				)
 			),
 			React.createElement(
-				'ul',
-				null,
-				links
+				'div',
+				{ className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' },
+				React.createElement(
+					'ul',
+					{ className: 'nav navbar-nav navbar-right' },
+					links
+				)
 			)
 		);
 	}
