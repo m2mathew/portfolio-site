@@ -1,0 +1,17 @@
+nav {
+  font-family: 'Source Sans Pro', sans-serif;
+  border-top: 10px solid blue; }
+  nav .myName {
+    font-weight: 500;
+    font-size: 2em; }
+
+.home-box {
+  height: 100%; }
+  .home-box .jumbotron {
+    width: 100%;
+    padding: 1em auto;
+    object-fit: scale-down;
+    position: relative;
+    overflow: hidden;
+    background: url("../images/resume2-jumbo.jpg");
+    background-size: cover; }

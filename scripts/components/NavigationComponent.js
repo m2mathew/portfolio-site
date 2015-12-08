@@ -18,7 +18,6 @@ module.exports = React.createClass({
 			<li key="resume" className={currentPage === 'resume' ? 'active nav-link' : 'nav-link'}><a href="#resume">Resume</a></li>
 		];
 
-
 		return (
 			<div className="container-fluid">
 
@@ -29,11 +28,12 @@ module.exports = React.createClass({
 						<span className="icon-bar"></span>
 						<span className="icon-bar"></span>
 					</button>
-					<a className="navbar-brand" href="#">Michael D. Mathew</a>
+					<a className="navbar-brand myName" href="#">Michael D. Mathew</a>
+					<p className="navbar-text">Web Developer</p>
 				</div>
 
 				<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul className="nav navbar-nav navbar-right">
+					<ul className="nav navbar-nav navbar-right nav-tabs">
 						{links}
 					 </ul>
 				</div>

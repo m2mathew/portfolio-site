@@ -31754,13 +31754,77 @@ module.exports = React.createClass({
 			'div',
 			{ className: 'container home-box' },
 			React.createElement(
-				'h2',
-				null,
-				'Home!'
+				'div',
+				{ className: 'jumbotron bokehs' },
+				React.createElement(
+					'h1',
+					null,
+					'Michael D. Mathew'
+				),
+				React.createElement(
+					'h3',
+					null,
+					'Front End Web Developer'
+				)
+			),
+			React.createElement(
+				'div',
+				{ className: 'well well-lg' },
+				React.createElement(
+					'h2',
+					null,
+					'Drumr'
+				),
+				React.createElement(
+					'p',
+					null,
+					'A way to find your favorite drummers'
+				)
+			),
+			React.createElement(
+				'div',
+				{ className: 'well well-lg' },
+				React.createElement(
+					'h2',
+					null,
+					'Iron Quizzes'
+				),
+				React.createElement(
+					'p',
+					null,
+					'Letting teachers create online quizzes and access statistics'
+				)
+			),
+			React.createElement(
+				'div',
+				{ className: 'well well-lg' },
+				React.createElement(
+					'h2',
+					null,
+					'Percussion Hub'
+				),
+				React.createElement(
+					'p',
+					null,
+					'Percussion teachers from a selected area of North Texas can access historical data about their schools'
+				)
+			),
+			React.createElement(
+				'div',
+				{ className: 'well well-lg' },
+				React.createElement(
+					'h2',
+					null,
+					'We·Blog'
+				),
+				React.createElement(
+					'p',
+					null,
+					'An app that lets users create blog posts and post them to a blog feed'
+				)
 			)
 		);
 	}
-
 });
 
 },{"react":161}],163:[function(require,module,exports){
@@ -31819,8 +31883,13 @@ module.exports = React.createClass({
 				),
 				React.createElement(
 					'a',
-					{ className: 'navbar-brand', href: '#' },
+					{ className: 'navbar-brand myName', href: '#' },
 					'Michael D. Mathew'
+				),
+				React.createElement(
+					'p',
+					{ className: 'navbar-text' },
+					'Web Developer'
 				)
 			),
 			React.createElement(
@@ -31828,7 +31897,7 @@ module.exports = React.createClass({
 				{ className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' },
 				React.createElement(
 					'ul',
-					{ className: 'nav navbar-nav navbar-right' },
+					{ className: 'nav navbar-nav navbar-right nav-tabs' },
 					links
 				)
 			)
@@ -31856,7 +31925,6 @@ module.exports = React.createClass({
 			)
 		);
 	}
-
 });
 
 },{"react":161}],165:[function(require,module,exports){
