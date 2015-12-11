@@ -31845,24 +31845,6 @@ module.exports = React.createClass({
 	render: function render() {
 		var currentPage = Backbone.history.getFragment();
 
-		var links = [React.createElement(
-			'li',
-			{ key: 'home', className: currentPage === '' ? 'active nav-link' : 'nav-link' },
-			React.createElement(
-				'a',
-				{ href: '#' },
-				'home'
-			)
-		), React.createElement(
-			'li',
-			{ key: 'resume', className: currentPage === 'resume' ? 'active nav-link' : 'nav-link' },
-			React.createElement(
-				'a',
-				{ href: '#resume' },
-				'resume'
-			)
-		)];
-
 		return React.createElement(
 			'div',
 			{ className: 'container-fluid' },
@@ -31887,8 +31869,25 @@ module.exports = React.createClass({
 				{ className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' },
 				React.createElement(
 					'ul',
-					{ className: 'nav navbar-nav navbar-left' },
-					links
+					{ className: 'nav navbar-nav navbar-left', id: 'menu' },
+					React.createElement(
+						'li',
+						{ key: 'home', className: 'nav-link' },
+						React.createElement(
+							'a',
+							{ href: '#' },
+							'home'
+						)
+					),
+					React.createElement(
+						'li',
+						{ key: 'resume', className: 'nav-link' },
+						React.createElement(
+							'a',
+							{ href: '#resume' },
+							'resume'
+						)
+					)
 				)
 			)
 		);
@@ -31909,24 +31908,112 @@ module.exports = React.createClass({
 			'section',
 			{ className: 'container resume-box' },
 			React.createElement(
-				'h2',
-				null,
-				'Michael D. Mathew'
+				'div',
+				{ className: 'title' },
+				React.createElement(
+					'h1',
+					{ className: 'text-left' },
+					'Mike Mathew'
+				),
+				React.createElement(
+					'h3',
+					{ className: 'text-left' },
+					'front end web developer'
+				)
 			),
 			React.createElement(
-				'h3',
-				null,
-				'Summary'
+				'div',
+				{ className: 'row col-lg-10 col-lg-offset-1' },
+				React.createElement(
+					'h3',
+					null,
+					'Summary'
+				),
+				React.createElement(
+					'p',
+					null,
+					'My journey has taken me from leading young people and teaching bands and drum lines around Texas to making websites and web applications for everyone. As I continue to grow as a developer, I would love to work alongside a collaborative team that values education and community.'
+				),
+				React.createElement(
+					'p',
+					null,
+					'In my previous positions, I was able to practice daily public speaking and leading groups of all sizes through a variety of projects. I remain excited about education and hope to use my influence to make my community a better place each day.'
+				)
 			),
 			React.createElement(
-				'p',
-				null,
-				'My journey has taken me from leading young people and teaching bands and drum lines around Texas to making websites and web applications for everyone. As I continue to grow as a developer, I would love to work alongside a collaborative team that values education and community.'
+				'div',
+				{ className: 'row col-lg-10 col-lg-offset-1' },
+				React.createElement(
+					'h3',
+					null,
+					'Specialties\u2028'
+				),
+				React.createElement(
+					'p',
+					null,
+					React.createElement(
+						'strong',
+						null,
+						'Skills and Languages:'
+					)
+				),
+				React.createElement(
+					'p',
+					null,
+					'JavaScript, HTML5, CSS3, DOM, jQuery, React, Backbone, Web Applications, Web Development'
+				),
+				React.createElement(
+					'p',
+					null,
+					React.createElement(
+						'strong',
+						null,
+						'Computer & Operating Systems:'
+					)
+				),
+				React.createElement(
+					'p',
+					null,
+					'Mac OS X,  iWork suite (Pages, Numbers, Keynote), MS Office (Word, Excel, PowerPoint), Sibelius 7, Virtual Drumline 2'
+				)
 			),
 			React.createElement(
-				'p',
-				null,
-				'In my previous positions, I was able to practice daily public speaking and leading groups of all sizes through a variety of projects. I remain excited about education and hope to use my influence to make my community a better place each day.'
+				'div',
+				{ className: 'row col-lg-10 col-lg-offset-1' },
+				React.createElement(
+					'h3',
+					null,
+					'Education'
+				),
+				React.createElement(
+					'p',
+					null,
+					React.createElement(
+						'strong',
+						null,
+						'The Iron Yard'
+					),
+					', Austin, Texas · Front End Engineering Certification (November 2015)'
+				),
+				React.createElement(
+					'p',
+					null,
+					React.createElement(
+						'strong',
+						null,
+						'Texas A&M University-Commerce'
+					),
+					', Commerce, Texas\u2028 · Candidate for Master of Music Education (Summer 2016)\u2028 · Bachelor of Science in Music Education (May 2002)'
+				)
+			),
+			React.createElement(
+				'button',
+				{ id: 'resume-button', className: 'btn-lg col-lg-8 col-lg-offset-2' },
+				React.createElement(
+					'a',
+					{ href: '../../assets/Resume-Michael_Mathew.pdf' },
+					'Get the .pdf!'
+				)
 			)
 		);
 	}
