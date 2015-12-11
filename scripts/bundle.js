@@ -31751,20 +31751,20 @@ module.exports = React.createClass({
 	render: function render() {
 
 		return React.createElement(
-			'div',
+			'section',
 			{ className: 'container home-box' },
 			React.createElement(
 				'div',
-				{ className: 'jumbotron bokehs' },
+				{ className: 'title' },
 				React.createElement(
 					'h1',
-					null,
-					'Michael D. Mathew'
+					{ className: 'text-left' },
+					'Mike Mathew'
 				),
 				React.createElement(
 					'h3',
-					null,
-					'Front End Web Developer'
+					{ className: 'text-left' },
+					'front end web developer'
 				)
 			),
 			React.createElement(
@@ -31851,7 +31851,7 @@ module.exports = React.createClass({
 			React.createElement(
 				'a',
 				{ href: '#' },
-				'Home'
+				'home'
 			)
 		), React.createElement(
 			'li',
@@ -31859,7 +31859,7 @@ module.exports = React.createClass({
 			React.createElement(
 				'a',
 				{ href: '#resume' },
-				'Resume'
+				'resume'
 			)
 		)];
 
@@ -31880,16 +31880,6 @@ module.exports = React.createClass({
 					React.createElement('span', { className: 'icon-bar' }),
 					React.createElement('span', { className: 'icon-bar' }),
 					React.createElement('span', { className: 'icon-bar' })
-				),
-				React.createElement(
-					'a',
-					{ className: 'navbar-brand myName', href: '#' },
-					'Michael D. Mathew'
-				),
-				React.createElement(
-					'p',
-					{ className: 'navbar-text' },
-					'Web Developer'
 				)
 			),
 			React.createElement(
@@ -31897,7 +31887,7 @@ module.exports = React.createClass({
 				{ className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' },
 				React.createElement(
 					'ul',
-					{ className: 'nav navbar-nav navbar-right nav-tabs' },
+					{ className: 'nav navbar-nav navbar-left' },
 					links
 				)
 			)
@@ -31916,7 +31906,7 @@ module.exports = React.createClass({
 	render: function render() {
 
 		return React.createElement(
-			'div',
+			'section',
 			{ className: 'container resume-box' },
 			React.createElement(
 				'h2',

@@ -8,10 +8,10 @@ module.exports = React.createClass({
 	render () {
 
 		return (
-			<div className="container home-box">
-				<div className="jumbotron bokehs">
-					<h1>Michael D. Mathew</h1>
-					<h3>Front End Web Developer</h3>
+			<section className="container home-box">
+				<div className="title">
+					<h1 className="text-left">Mike Mathew</h1>
+					<h3 className="text-left">front end web developer</h3>
 				</div>
 
 				<div className="well well-lg">
@@ -30,7 +30,7 @@ module.exports = React.createClass({
 					<h2>We·Blog</h2>
 					<p>An app that lets users create blog posts and post them to a blog feed</p>
 				</div>
-			</div>
+			</section>
 		);
 	}
 });
