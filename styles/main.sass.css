@@ -10,8 +10,5 @@ nav {
   .home-box .jumbotron {
     width: 100%;
     padding: 1em auto;
-    object-fit: scale-down;
-    position: relative;
-    overflow: hidden;
     background: url("../images/resume2-jumbo.jpg");
     background-size: cover; }

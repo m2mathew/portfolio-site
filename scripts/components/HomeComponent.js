@@ -10,7 +10,6 @@ module.exports = React.createClass({
 		return (
 			<div className="container home-box">
 				<div className="jumbotron bokehs">
-
 					<h1>Michael D. Mathew</h1>
 					<h3>Front End Web Developer</h3>
 				</div>

@@ -9,7 +9,6 @@ nav {
 	.myName {
 		font-weight: 500;
 		font-size: 2em;
-		// margin: 0.5em auto;
 	}
 }
 
@@ -19,11 +18,6 @@ nav {
 	.jumbotron {
 		width: 100%;
 		padding: 1em auto;
-		object-fit: scale-down;
-		// background-image: url(../images/resume2-jumbo.jpg);
-		// background-size: cover;
-		position: relative;
-		overflow: hidden;
 		background: url('../images/resume2-jumbo.jpg');
 		background-size: cover;
 	}
