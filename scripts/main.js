@@ -19,12 +19,12 @@ let Router = Backbone.Router.extend({
 		'': 'home',
 		'resume': 'resume'
 	},
-	home: () => {
+	home: function() {
 		ReactDOM.render(
 			<HomeComponent />, app
 		);
 	},
-	resume: () => {
+	resume: function() {
 		ReactDOM.render(
 			<ResumeComponent />, app
 		);

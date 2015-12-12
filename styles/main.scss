@@ -1,7 +1,9 @@
-$purple: #454174;
+$dark-purple: #454174;
+$light-purple: #C1D1EA;
 
 
 body {
+	font-family: 'Source Sans Pro', sans-serif;
 	background-color: #fff;
 	font-size: 16px;
 	line-height: 1.6;
@@ -15,77 +17,79 @@ main {
 }
 
 nav {
-	font-family: 'Source Sans Pro', sans-serif;
 
-	li a {
-		color: #111;
-	}
-
-	#menu .active a {
+	#menu .active  a {
 		background-color: #fff;
 		color: #454174;
+		border-bottom: 1px solid $light-purple;
 	}
 }
 
 #nav {
-		border-top: 10px solid $purple;
+	border-top: 20px solid $dark-purple;
+	background-color: #fff;
+	border-bottom: none;
+
+	li {
+		a {
+			color: #222;
+
+			&:hover {
+				border-bottom: 1px solid $dark-purple;
+			}
+		}
 	}
+}
 
 .home-box {
 	height: 100%;
+}
 
-	.title {
-		width: 100%;
-		margin: 5em auto 1em auto;
-		padding: 1em auto;
+.title {
+	width: 100%;
+	margin: 5em auto 1em auto;
+	padding: 1em auto;
 
-		h1 {
-			font-family: 'Open Sans', sans-serif;
-			font-weight: 100;
-			text-transform: uppercase;
-			font-size: 140px;
-		}
+	h1 {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 100;
+		text-transform: uppercase;
+		font-size: 140px;
+	}
 
-		h3 {
-			font-family: 'Open Sans', sans-serif;
-			font-weight: 300;
-			text-transform: lowercase;
-			font-size: 32px;
-			margin-bottom: 1.5em;
-			margin-left: 0.3em;
-		}
+	h3 {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		text-transform: lowercase;
+		font-size: 32px;
+		margin-bottom: 1.5em;
+		margin-left: 0.3em;
 	}
 }
 
 .resume-box {
 
-	.title {
-		width: 100%;
-		margin: 5em auto 1em auto;
-		padding: 1em auto;
+	.body-text {
+		padding-left: 1.5em;
+	}
 
-		h1 {
-			font-family: 'Open Sans', sans-serif;
-			font-weight: 100;
-			text-transform: uppercase;
-			font-size: 140px;
+	.well {
+		&:hover, &:focus {
+			background-color: $light-purple;
+			padding-left: 0.9em;
+			border: 1px solid #bbb;
 		}
+	}
 
-		h3 {
-			font-family: 'Open Sans', sans-serif;
-			font-weight: 300;
-			text-transform: lowercase;
-			font-size: 32px;
-			margin-bottom: 1.5em;
-			margin-left: 0.3em;
-		}
+	.indent {
+		padding-left: 1em;
 	}
 
 	#resume-button {
 		margin-top: 3em;
 		margin-bottom: 3em;
 		background-color: #C1D1EA;
-		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#C1D1EA));
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to($light-purple));
 		text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
 		-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 		font-weight: bold;
@@ -100,15 +104,14 @@ nav {
 		-webkit-animation: pulse 1.5s infinite ease-in-out;
 		}
 	}
-
 }
 
 footer {
-	background-color: #C1D1EA;
+	background-color: $light-purple;
 	margin: 0;
 	margin-top: 1em;
     padding: 1em;
-    border-top: 5px solid $purple;
+    border-top: 5px solid $dark-purple;
 
 	p {
 		padding-left: 2em;
@@ -129,7 +132,7 @@ footer {
 	}
 
 	50% {
-		-webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.99);
+		-webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.5);
 	}
 
 	100% {

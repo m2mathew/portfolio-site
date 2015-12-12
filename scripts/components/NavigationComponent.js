@@ -13,6 +13,11 @@ module.exports = React.createClass({
 	render () {
 		var currentPage = Backbone.history.getFragment();
 
+		let links = [
+			<li key="home" className={currentPage === '' ? 'active nav-link' : 'nav-link'}><a href="#">home</a></li>,
+			<li key="resume" className={currentPage === 'resume' ? 'active nav-link' : 'nav-link'}><a href="#resume">resume</a></li>
+		];
+
 		return (
 			<div className="container-fluid">
 
@@ -27,8 +32,7 @@ module.exports = React.createClass({
 
 				<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul className="nav navbar-nav navbar-left" id="menu">
-						<li key="home" className="nav-link"><a href="#">home</a></li>
-						<li key="resume" className="nav-link"><a href="#resume">resume</a></li>
+						{links}
 					</ul>
 				</div>
 			</div>
