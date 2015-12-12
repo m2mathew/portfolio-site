@@ -27,6 +27,13 @@ nav #menu .active a {
 .home-box {
   height: 100%; }
 
+.about-box {
+  margin-bottom: 3em; }
+  .about-box h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    line-height: 2; }
+
 .title {
   width: 100%;
   margin: 5em auto 1em auto;
