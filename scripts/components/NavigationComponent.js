@@ -2,6 +2,7 @@
 
 let React = require('react');
 let Backbone = require('backbone');
+require('bootstrap');
 
 module.exports = React.createClass({
 	getInitialState() {
@@ -9,9 +10,19 @@ module.exports = React.createClass({
 			links: []
 		};
 	},
-
+	componentWillMount() {
+		this.props.router.on('route', () => {
+				this.forceUpdate();
+		});
+	},
+	componentDidMount() {
+		$(document).ready(function(){
+			$('.dropdown-toggle').dropdown();
+		})
+	},
 	render () {
-		var currentPage = Backbone.history.getFragment();
+
+		let currentPage = Backbone.history.getFragment();
 
 		let links = [
 			<li key="home" className={currentPage === '' ? 'active nav-link' : 'nav-link'}><a href="#">home</a></li>,

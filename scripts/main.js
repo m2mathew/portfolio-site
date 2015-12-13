@@ -3,6 +3,7 @@
 let React = require('react');
 let ReactDOM = require('react-dom');
 let Backbone = require('backbone');
+require('bootstrap');
 
 window.$ = require('jquery');
 window.jQuery = $;

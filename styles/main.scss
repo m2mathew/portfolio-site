@@ -2,7 +2,6 @@ $dark-purple: #454174;
 $light-purple: #C1D1EA;
 $header: 'Open Sans', sans-serif;
 
-
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 	background-color: #fff;
@@ -40,28 +39,24 @@ nav {
 			}
 		}
 	}
+
+	&.navbar-inverse .navbar-toggle {
+	    border-color: #808080;
+	}
+
+	&.navbar-inverse .navbar-toggle .icon-bar {
+		background-color: #808080;
+	}
 }
 
 .home-box {
 	height: 100%;
 }
 
-.about-box {
-	width: 100%;
-	margin-bottom: 2em;
-	padding: 0 1.5em 2em 1.5em;
-	border-bottom: 10px solid gray;
-
-	h3 {
-		font-family: $header;
-		font-weight: 100;
-		line-height: 2;
-	}
-}
-
 .title {
 	width: 100%;
-	margin: 5em auto 1em auto;
+	margin-top: 5em;
+	margin-bottom: 2em;
 	padding: 1em auto;
 	border-bottom: 10px solid gray;
 
@@ -79,6 +74,20 @@ nav {
 		font-size: 32px;
 		margin-bottom: 1.5em;
 		margin-left: 0.3em;
+	}
+}
+
+.about-box {
+	width: 100%;
+	margin-bottom: 2em;
+	padding: auto 1.5em;
+	padding-bottom: 2em;
+	border-bottom: 10px solid gray;
+
+	h3 {
+		font-family: $header;
+		font-weight: 100;
+		line-height: 2;
 	}
 }
 
