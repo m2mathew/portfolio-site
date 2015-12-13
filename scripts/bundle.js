@@ -31755,7 +31755,7 @@ module.exports = React.createClass({
 			{ className: 'container about-box' },
 			React.createElement(
 				'div',
-				{ className: 'row' },
+				{ className: 'row text-justify' },
 				React.createElement(
 					'h3',
 					null,
@@ -31764,7 +31764,7 @@ module.exports = React.createClass({
 						null,
 						'HOW TO MAKE A FRONT END DEVELOPER NAMED MIKE'
 					),
-					' • FALL IN LOVE WITH MUSIC AS A BOY • GET A TRS-80 FROM UNCLE RICKY • START HITTING THINGS WITH DRUMSTICKS • PLAY LOTS OF VIDEO GAMES • TAKE TWO YEARS OF COMPUTER SCIENCE IN HIGH SCHOOL AND SIT NEXT TO FUTURE WIFE • MAJOR IN MUSIC EDUCATION IN COLLEGE • TOUR AND PERFORM WITH A DRUM AND BUGLE CORPS • SPEND EQUAL TIME WRITING MUSIC ON A COMPUTER AS PERFORMING IT • GET MARRIED TO YOUR HIGH SCHOOL SWEETHEART • GRADUATE COLLEGE AND TEACH MUSIC FOR OVER A DECADE • MAKE WEBSITES FOR YOUR BAND PROGRAMS • HAVE THREE KIDS ALONG THE WAY • BECOME THE GUARDIAN FOR YOUR BROTHER • REALIZE THAT YOU SPEND AS MUCH TIME FORMATTING AN EMAIL AS TEACHING • START LEARNING SOME CODE • SWITCH GEARS FROM BEING A BAND DIRECTOR TO A WEB DEVELOPER • ENROLL AT A CODE SCHOOL THREE HOURS FROM YOUR FAMILY • KEEP LEARNING AND MAKING AWESOME THINGS.'
+					' • FALL IN LOVE WITH LEARNING • GET A TRS-80 FROM UNCLE RICKY • START HITTING THINGS WITH DRUMSTICKS • PLAY LOTS OF VIDEO GAMES • TAKE TWO YEARS OF COMPUTER SCIENCE IN HIGH SCHOOL • SIT NEXT TO FUTURE WIFE IN COMPUTER SCIENCE • MAJOR IN MUSIC EDUCATION IN COLLEGE • TOUR AND PERFORM WITH A DRUM AND BUGLE CORPS • SPEND EQUAL TIME WRITING MUSIC ON A COMPUTER AS PERFORMING IT • GET MARRIED TO YOUR HIGH SCHOOL SWEETHEART • GRADUATE COLLEGE AND TEACH MUSIC FOR OVER A DECADE • MAKE WEBSITES FOR YOUR BAND PROGRAMS • HAVE THREE KIDS ALONG THE WAY • BECOME THE GUARDIAN FOR YOUR BROTHER • REALIZE THAT YOU SPEND AS MUCH TIME FORMATTING AN EMAIL AS TEACHING • START LEARNING MORE CODE • SWITCH GEARS FROM BEING A BAND DIRECTOR TO A WEB DEVELOPER • ENROLL AT A CODE SCHOOL THREE HOURS FROM YOUR FAMILY • KEEP LEARNING AND MAKING AWESOME THINGS.'
 				)
 			)
 		);
@@ -31879,7 +31879,7 @@ module.exports = React.createClass({
 			React.createElement(TitleComponent, null),
 			React.createElement(
 				'div',
-				{ className: 'row col-sm-12 col-lg-11' },
+				{ className: 'row col-sm-12' },
 				React.createElement(
 					'h3',
 					{ className: 'well' },
@@ -31902,7 +31902,7 @@ module.exports = React.createClass({
 			),
 			React.createElement(
 				'div',
-				{ className: 'row col-sm-12 col-lg-11' },
+				{ className: 'row col-sm-12' },
 				React.createElement(
 					'h3',
 					{ className: 'well' },
@@ -31943,7 +31943,7 @@ module.exports = React.createClass({
 			),
 			React.createElement(
 				'div',
-				{ className: 'row col-sm-12 col-lg-11' },
+				{ className: 'row col-sm-12' },
 				React.createElement(
 					'h3',
 					{ className: 'well' },
@@ -31991,7 +31991,7 @@ module.exports = React.createClass({
 			),
 			React.createElement(
 				'div',
-				{ className: 'row col-sm-12 col-lg-11' },
+				{ className: 'row col-sm-12' },
 				React.createElement(
 					'h3',
 					{ className: 'well' },
@@ -32054,7 +32054,7 @@ module.exports = React.createClass({
 			),
 			React.createElement(
 				'div',
-				{ className: 'row col-sm-12 col-lg-11' },
+				{ className: 'row col-sm-12' },
 				React.createElement(
 					'h3',
 					{ className: 'well' },
@@ -32159,7 +32159,7 @@ module.exports = React.createClass({
 				{ className: 'well well-lg' },
 				React.createElement(
 					'h2',
-					null,
+					{ className: 'title-h2' },
 					'Drumr'
 				),
 				React.createElement(
@@ -32173,7 +32173,7 @@ module.exports = React.createClass({
 				{ className: 'well well-lg' },
 				React.createElement(
 					'h2',
-					null,
+					{ className: 'title-h2' },
 					'Iron Quizzes'
 				),
 				React.createElement(
@@ -32187,7 +32187,7 @@ module.exports = React.createClass({
 				{ className: 'well well-lg' },
 				React.createElement(
 					'h2',
-					null,
+					{ className: 'title-h2' },
 					'Percussion Hub'
 				),
 				React.createElement(
@@ -32201,7 +32201,7 @@ module.exports = React.createClass({
 				{ className: 'well well-lg' },
 				React.createElement(
 					'h2',
-					null,
+					{ className: 'title-h2' },
 					'We·Blog'
 				),
 				React.createElement(

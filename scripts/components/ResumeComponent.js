@@ -12,7 +12,7 @@ module.exports = React.createClass({
 			<section className="container resume-box">
 				<TitleComponent />
 
-				<div className="row col-sm-12 col-lg-11">
+				<div className="row col-sm-12">
 					<h3 className="well">Summary</h3>
 					<div className="body-text">
 						<p>My journey has taken me from leading young people and teaching bands and drum lines around Texas to making websites and web applications for everyone. As I continue to grow as a developer, I would love to work alongside a collaborative team that values education and community.</p>
@@ -20,7 +20,7 @@ module.exports = React.createClass({
 					</div>
 				</div>
 
-				<div className="row col-sm-12 col-lg-11">
+				<div className="row col-sm-12">
 					<h3 className="well">Specialties </h3>
 					<div className="body-text">
 						<p><strong>Skills and Languages:</strong></p>
@@ -30,7 +30,7 @@ module.exports = React.createClass({
 					</div>
 				</div>
 
-				<div className="row col-sm-12 col-lg-11">
+				<div className="row col-sm-12">
 					<h3 className="well">Education</h3>
 					<div className="body-text">
 						<p><strong>The Iron Yard</strong> - Austin, Texas</p>
@@ -41,7 +41,7 @@ module.exports = React.createClass({
 					</div>
 				</div>
 
-				<div className="row col-sm-12 col-lg-11">
+				<div className="row col-sm-12">
 					<h3 className="well">Personal Projects </h3>
 					<div className="body-text">
 						<p><strong><a href="http://www.drumsensei.com/">Drumsensei.com</a></strong></p>
@@ -53,7 +53,7 @@ module.exports = React.createClass({
 					</div>
 				</div>
 
-				<div className="row col-sm-12 col-lg-11">
+				<div className="row col-sm-12">
 					<h3 className="well">Group Projects </h3>
 					<div className="body-text">
 						<p><strong><a href="http://tiy-austin-front-end-engineering.github.io/">Iron Quizzes</a></strong></p>
