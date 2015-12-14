@@ -32170,9 +32170,13 @@ module.exports = React.createClass({
 				'div',
 				{ className: 'well well-lg' },
 				React.createElement(
-					'h3',
-					{ className: 'title-h3' },
-					'Drumr'
+					'a',
+					{ href: 'http://drumr.getforge.io/' },
+					React.createElement(
+						'h3',
+						{ className: 'title-h3' },
+						'Drumr'
+					)
 				),
 				React.createElement(
 					'p',
@@ -32184,9 +32188,13 @@ module.exports = React.createClass({
 				'div',
 				{ className: 'well well-lg' },
 				React.createElement(
-					'h3',
-					{ className: 'title-h3' },
-					'Iron Quizzes'
+					'a',
+					{ href: 'http://tiy-austin-front-end-engineering.github.io/' },
+					React.createElement(
+						'h3',
+						{ className: 'title-h3' },
+						'Iron Quizzes'
+					)
 				),
 				React.createElement(
 					'p',
@@ -32198,9 +32206,13 @@ module.exports = React.createClass({
 				'div',
 				{ className: 'well well-lg' },
 				React.createElement(
-					'h3',
-					{ className: 'title-h3' },
-					'Percussion Hub'
+					'a',
+					{ href: '#' },
+					React.createElement(
+						'h3',
+						{ className: 'title-h3' },
+						'Find a Spot'
+					)
 				),
 				React.createElement(
 					'p',
@@ -32212,9 +32224,13 @@ module.exports = React.createClass({
 				'div',
 				{ className: 'well well-lg' },
 				React.createElement(
-					'h3',
-					{ className: 'title-h3' },
-					'We·Blog'
+					'a',
+					{ href: '#' },
+					React.createElement(
+						'h3',
+						{ className: 'title-h3' },
+						'We·Blog'
+					)
 				),
 				React.createElement(
 					'p',
