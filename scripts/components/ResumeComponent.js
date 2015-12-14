@@ -26,7 +26,7 @@ module.exports = React.createClass({
 						<p><strong>Skills and Languages:</strong></p>
 						<p className="indent">JavaScript, HTML5, CSS3, DOM, jQuery, React, Backbone, Web Applications, Web Development</p>
 						<p><strong>Computer & Operating Systems:</strong></p>
-						<p className="indent">Mac OS X,  iWork suite (Pages, Numbers, Keynote), MS Office (Word, Excel, PowerPoint), Sibelius 7, Virtual Drumline 2</p>
+						<p className="indent">Mac OS X,  iWork suite (Pages, Numbers, Keynote), MS Office (Word, Excel, PowerPoint), Sublime Text 3</p>
 					</div>
 				</div>
 

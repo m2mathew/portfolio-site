@@ -2,7 +2,7 @@
 
 let React = require('react');
 let Backbone = require('backbone');
-require('bootstrap');
+
 
 module.exports = React.createClass({
 	getInitialState() {

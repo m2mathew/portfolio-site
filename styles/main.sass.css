@@ -13,7 +13,7 @@ main {
 nav #menu .active a {
   background-color: #fff;
   color: #454174;
-  border-bottom: 1px solid #C1D1EA; }
+  border-bottom: 1px solid #CCC4EA; }
 
 #nav {
   border-top: 20px solid #454174;
@@ -70,22 +70,26 @@ nav #menu .active a {
 .resume-box .body-text {
   padding-left: 1.5em; }
 
-.resume-box .well:hover, .resume-box .well:focus {
-  background-color: #C1D1EA;
-  padding-left: 0.9em;
-  border: 1px solid #bbb; }
+.resume-box .well {
+  background-color: #D4D8EF; }
+  .resume-box .well:hover, .resume-box .well:focus {
+    background-color: #CCC4EA;
+    padding-left: 0.9em;
+    border: 1px solid #bbb; }
 
 .resume-box .indent {
   padding-left: 1em; }
 
-.resume-box h3 {
-  font-weight: 600; }
+.resume-box .row h3 {
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase; }
 
 .resume-box #resume-button {
   margin-top: 3em;
   margin-bottom: 3em;
   background-color: #C1D1EA;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#C1D1EA));
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#CCC4EA));
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   font-weight: bold;
@@ -97,10 +101,10 @@ nav #menu .active a {
     -webkit-animation: pulse 1.5s infinite ease-in-out; }
 
 footer {
-  background-color: #C1D1EA;
+  background-color: #CCC4EA;
   margin: 0;
   margin-top: 1em;
-  padding: 1em;
+  padding: 2em 1em;
   border-top: 5px solid #454174; }
   footer p {
     padding-left: 2em; }

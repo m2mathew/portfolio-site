@@ -1,5 +1,5 @@
 $dark-purple: #454174;
-$light-purple: #C1D1EA;
+$light-purple: #CCC4EA;
 $header: 'Open Sans', sans-serif;
 
 body {
@@ -110,6 +110,8 @@ nav {
 	}
 
 	.well {
+		background-color: #D4D8EF;
+
 		&:hover, &:focus {
 			background-color: $light-purple;
 			padding-left: 0.9em;
@@ -121,8 +123,10 @@ nav {
 		padding-left: 1em;
 	}
 
-	h3 {
+	.row h3 {
 		font-weight: 600;
+		font-family: $header;
+		text-transform: uppercase;
 	}
 
 	#resume-button {
@@ -150,7 +154,7 @@ footer {
 	background-color: $light-purple;
 	margin: 0;
 	margin-top: 1em;
-    padding: 1em;
+    padding: 2em 1em;
     border-top: 5px solid $dark-purple;
 
 	p {
