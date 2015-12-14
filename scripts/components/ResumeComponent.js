@@ -9,7 +9,7 @@ module.exports = React.createClass({
 	render () {
 
 		return (
-			<section className="container-fluid resume-box">
+			<section className="container resume-box">
 				<TitleComponent />
 
 				<div className="row col-sm-12">

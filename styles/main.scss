@@ -89,13 +89,25 @@ nav {
 		font-weight: 100;
 		line-height: 2;
 	}
+
+	a {
+		color: #41BEDD;
+	}
 }
 
 .work-box {
 	padding-top: 2em;
-	width: 100%;
+	width: 80%;
+
+	h1 {
+		font-weight: 900;
+		font-size: 40px;
+		margin-bottom: 1em;
+	}
 
 	.card {
+		margin-bottom: 2em !important;
+		text-align: left;
 
 		.ghost-button {
 			color: #4c4c4c;
@@ -109,6 +121,8 @@ nav {
 			text-transform: uppercase;
 			display: inline-block;
 			font-family: $header;
+			margin-top: 1.5em;
+			margin-right: 1em;
 
 			&:hover, &:focus {
 				color: #f16529;
@@ -118,14 +132,27 @@ nav {
 			}
 		}
 
+		.m-img-top {
+			margin-top: 1.75em;
+			background: #bbb;
+			border-radius: 0.8em;
+			padding: 1em;
+			border: 0.6em solid #555;
+		}
+
 		.title-h1 {
-			font-family: $header;
+			font-family: 'Source Sans Pro', sans-serif;
+			color: #41BEDD;
+			font-weight: 700;
 			text-transform: uppercase;
+			margin-bottom: 0.75em;
+
 		}
 	}
 }
 
 .resume-box {
+	margin-bottom: 2em;
 
 	.body-text {
 		padding-left: 1.5em;
@@ -151,6 +178,7 @@ nav {
 		text-transform: uppercase;
 		display: inline-block;
 		font-family: $header;
+		margin-top: 1.5em;
 
 		&:hover, &:focus {
 			color: #f16529;

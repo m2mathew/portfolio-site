@@ -31748,11 +31748,17 @@ var React = require('react');
 module.exports = React.createClass({
 	displayName: 'exports',
 
+	componentWillMount: function componentWillMount() {
+		$('#myModal').on('shown.bs.modal', function () {
+			$('#myInput').focus();
+		});
+	},
+
 	render: function render() {
 
 		return React.createElement(
 			'div',
-			{ className: 'container-fluid about-box' },
+			{ className: 'container about-box' },
 			React.createElement(
 				'div',
 				{ className: 'row text-justify' },
@@ -31764,7 +31770,44 @@ module.exports = React.createClass({
 						null,
 						'HOW TO MAKE A FRONT END DEVELOPER NAMED MIKE'
 					),
-					' • FALL IN LOVE WITH LEARNING • GET A TRS-80 FROM UNCLE RICKY AND LEARN TO PROGRAM IN BASIC • START HITTING THINGS WITH DRUMSTICKS • PLAY LOTS OF VIDEO GAMES • TAKE TWO YEARS OF COMPUTER SCIENCE IN HIGH SCHOOL USING C++ AND TURBO PASCAL • SIT NEXT TO FUTURE WIFE IN COMPUTER SCIENCE • MAJOR IN MUSIC EDUCATION IN COLLEGE • TOUR AND PERFORM WITH A DRUM AND BUGLE CORPS • SPEND EQUAL TIME WRITING MUSIC ON A COMPUTER AS PERFORMING IT • GET MARRIED TO YOUR HIGH SCHOOL SWEETHEART • GRADUATE COLLEGE AND TEACH MUSIC FOR OVER A DECADE • MAKE WEBSITES FOR YOUR BAND PROGRAMS • HAVE THREE KIDS ALONG THE WAY • BECOME THE GUARDIAN FOR YOUR BROTHER • REALIZE THAT YOU SPEND AS MUCH TIME FORMATTING AN EMAIL AS TEACHING • START LEARNING MORE CODE • SWITCH GEARS FROM BEING A BAND DIRECTOR TO A WEB DEVELOPER • ENROLL AT A CODE SCHOOL THREE HOURS FROM HOME • KEEP LEARNING AND MAKING AWESOME THINGS.'
+					' • FALL IN LOVE WITH LEARNING • GET A TRS-80 FROM UNCLE RICKY AND LEARN TO PROGRAM IN BASIC • START HITTING THINGS WITH DRUMSTICKS • PLAY LOTS OF VIDEO GAMES • TAKE TWO YEARS OF COMPUTER SCIENCE IN HIGH SCHOOL USING C++ AND TURBO PASCAL • SIT NEXT TO FUTURE WIFE IN COMPUTER SCIENCE • MAJOR IN MUSIC EDUCATION IN COLLEGE •',
+					React.createElement(
+						'a',
+						{ 'data-toggle': 'modal', href: '#dci', 'class': 'text-callout' },
+						'TOUR AND PERFORM WITH A DRUM AND BUGLE CORPS'
+					),
+					React.createElement(
+						'div',
+						{ 'class': 'modal fade', id: 'dci', tabindex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel', 'aria-hidden': 'true' },
+						React.createElement(
+							'div',
+							{ 'class': 'modal-dialog' },
+							React.createElement(
+								'div',
+								{ 'class': 'modal-content' },
+								React.createElement(
+									'div',
+									null,
+									React.createElement(
+										'button',
+										{ type: 'button', 'class': 'close', 'data-dismiss': 'modal', 'aria-hidden': 'true' },
+										'×'
+									)
+								),
+								React.createElement(
+									'div',
+									{ 'class': 'modal-body' },
+									React.createElement('img', { src: '../../images/drum-corps-crown-2000.jpeg', alt: 'Mike on tour with Carolina Crown 2000' })
+								),
+								React.createElement(
+									'h4',
+									{ 'class': 'modal-title' },
+									'I marched with the Troopers in 1996 and Carolina Crown in 2000, both playing quads in the drum line. This experience is unlike anything else. We traveled on charter buses for a summer and stayed in high schools in each city. It is kind of like the army meets marching band.'
+								)
+							)
+						)
+					),
+					'• SPEND EQUAL TIME WRITING MUSIC ON A COMPUTER AS PERFORMING IT • GET MARRIED TO YOUR HIGH SCHOOL SWEETHEART • GRADUATE COLLEGE AND TEACH MUSIC FOR OVER A DECADE • MAKE WEBSITES FOR YOUR BAND PROGRAMS • HAVE THREE KIDS ALONG THE WAY • BECOME THE GUARDIAN FOR YOUR BROTHER • REALIZE THAT YOU SPEND AS MUCH TIME FORMATTING AN EMAIL AS TEACHING • START LEARNING MORE CODE • SWITCH GEARS FROM BEING A BAND DIRECTOR TO A WEB DEVELOPER • ENROLL AT A CODE SCHOOL THREE HOURS FROM HOME • KEEP LEARNING AND MAKING AWESOME THINGS.'
 				)
 			)
 		);
@@ -31887,7 +31930,7 @@ module.exports = React.createClass({
 
 		return React.createElement(
 			'section',
-			{ className: 'container-fluid resume-box' },
+			{ className: 'container resume-box' },
 			React.createElement(TitleComponent, null),
 			React.createElement(
 				'div',
@@ -32165,7 +32208,12 @@ module.exports = React.createClass({
 
 		return React.createElement(
 			'div',
-			{ className: 'container-fluid work-box' },
+			{ className: 'container work-box' },
+			React.createElement(
+				'h1',
+				{ className: 'text-center' },
+				'My work so far'
+			),
 			React.createElement(
 				'div',
 				{ className: 'row card' },
@@ -32195,17 +32243,26 @@ module.exports = React.createClass({
 					),
 					React.createElement(
 						'a',
-						{ href: '#', target: '_blank' },
+						{ href: 'http://drumr.getforge.io/', target: '_blank' },
 						React.createElement(
 							'p',
 							{ className: 'ghost-button' },
 							'Visit Website'
 						)
+					),
+					React.createElement(
+						'a',
+						{ href: 'https://github.com/m2mathew/drumr-app-v2', target: '_blank' },
+						React.createElement(
+							'p',
+							{ className: 'ghost-button' },
+							'View Code'
+						)
 					)
 				),
 				React.createElement(
 					'div',
-					{ className: 'col-md-8' },
+					{ className: 'col-md-8 m-img-top' },
 					React.createElement('img', { src: '../../images/drumr-screenshot.png', alt: 'Screenshot of drummer application', className: 'img-responsive screenshot' })
 				)
 			),
@@ -32238,17 +32295,26 @@ module.exports = React.createClass({
 					),
 					React.createElement(
 						'a',
-						{ href: 'http://drumr.getforge.io/', target: '_blank' },
+						{ href: 'http://tiy-austin-front-end-engineering.github.io/', target: '_blank' },
 						React.createElement(
 							'p',
 							{ className: 'ghost-button' },
 							'Visit Website'
 						)
+					),
+					React.createElement(
+						'a',
+						{ href: 'https://github.com/TIY-Austin-Front-End-Engineering/Iron-Quizzes', target: '_blank' },
+						React.createElement(
+							'p',
+							{ className: 'ghost-button' },
+							'View Code'
+						)
 					)
 				),
 				React.createElement(
 					'div',
-					{ className: 'col-md-8' },
+					{ className: 'col-md-8 m-img-top' },
 					React.createElement('img', { src: '../../images/iron-quizzes-screenshot.png', alt: 'Screenshot of Iron Quizzes application', className: 'img-responsive screenshot' })
 				)
 			),
@@ -32281,17 +32347,26 @@ module.exports = React.createClass({
 					),
 					React.createElement(
 						'a',
-						{ href: 'http://tiy-austin-front-end-engineering.github.io/', target: '_blank' },
+						{ href: 'https://m2mathew.github.io/', target: '_blank' },
 						React.createElement(
 							'p',
 							{ className: 'ghost-button' },
 							'Visit Website'
 						)
+					),
+					React.createElement(
+						'a',
+						{ href: 'https://github.com/m2mathew/find-a-spot', target: '_blank' },
+						React.createElement(
+							'p',
+							{ className: 'ghost-button' },
+							'View Code'
+						)
 					)
 				),
 				React.createElement(
 					'div',
-					{ className: 'col-md-8' },
+					{ className: 'col-md-8 m-img-top' },
 					React.createElement('img', { src: '../../images/find-a-spot-screenshot.png', alt: 'Screenshot of Find a Spot application', className: 'img-responsive screenshot' })
 				)
 			)
