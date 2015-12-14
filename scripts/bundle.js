@@ -32170,8 +32170,8 @@ module.exports = React.createClass({
 				'div',
 				{ className: 'well well-lg' },
 				React.createElement(
-					'h2',
-					{ className: 'title-h2' },
+					'h3',
+					{ className: 'title-h3' },
 					'Drumr'
 				),
 				React.createElement(
@@ -32184,8 +32184,8 @@ module.exports = React.createClass({
 				'div',
 				{ className: 'well well-lg' },
 				React.createElement(
-					'h2',
-					{ className: 'title-h2' },
+					'h3',
+					{ className: 'title-h3' },
 					'Iron Quizzes'
 				),
 				React.createElement(
@@ -32198,8 +32198,8 @@ module.exports = React.createClass({
 				'div',
 				{ className: 'well well-lg' },
 				React.createElement(
-					'h2',
-					{ className: 'title-h2' },
+					'h3',
+					{ className: 'title-h3' },
 					'Percussion Hub'
 				),
 				React.createElement(
@@ -32212,8 +32212,8 @@ module.exports = React.createClass({
 				'div',
 				{ className: 'well well-lg' },
 				React.createElement(
-					'h2',
-					{ className: 'title-h2' },
+					'h3',
+					{ className: 'title-h3' },
 					'We·Blog'
 				),
 				React.createElement(
