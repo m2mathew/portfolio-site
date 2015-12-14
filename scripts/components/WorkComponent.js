@@ -7,25 +7,45 @@ module.exports = React.createClass({
 	render () {
 
 		return (
-			<div className="container work-box">
+			<div className="container-fluid work-box">
+
+				<div className="row card">
+					<div className="col-md-4">
+						<h1 className="title-h1">Drumr</h1>
+						<p>A way to find and keep track of your favorite drummers. This application was designed and built in a two-week period as a final project for The Iron Yard. It uses Masonry to organize the photos and React to load the information quicly.</p>
+						<p><strong>Built With</strong><br />HTML5 / CSS3 / React.js / Backbone.js / Parse API / Masonry / Sass</p>
+						<a href="#" target="_blank"><p className="ghost-button">Visit Website</p></a>
+					</div>
+					<div className="col-md-8">
+						<img src="../../images/drumr-screenshot.png" alt="Screenshot of drummer application" className="img-responsive screenshot"/>
+					</div>
+				</div>
+
+				<div className="row card">
+					<div className="col-md-4">
+						<h1 className="title-h1">Iron Quizzes</h1>
+						<p>Working with 16 developers using React, Parse, and Skeleton, this app lets teachers login to create/edit tests and view multiple kinds of analytics. Students can also login and take tests assigned to their specific class. Most of my work involved the analytics data for teachers to access.</p>
+						<p><strong>Built With</strong><br />HTML5 / CSS3 / React.js / Backbone.js / Parse API / Sass</p>
+						<a href="http://drumr.getforge.io/" target="_blank"><p className="ghost-button">Visit Website</p></a>
+					</div>
+					<div className="col-md-8">
+						<img src="../../images/iron-quizzes-screenshot.png" alt="Screenshot of Iron Quizzes application" className="img-responsive screenshot"/>
+					</div>
+				</div>
+
+				<div className="row card">
+					<div className="col-md-4">
+						<h1 className="title-h1">Find a Spot</h1>
+						<p>Constructed with 2 front-end developers, 1 back-end developer, and 1 designer, this app uses Backbone and jQuery to let a logged-in user find an open parking spot at a selection of Austin restaurants. This was conceived, designed, and deployed in four days. </p>
+						<p><strong>Built With</strong><br />HTML5 / CSS3 / Backbone.js / Sass</p>
+						<a href="http://tiy-austin-front-end-engineering.github.io/" target="_blank"><p className="ghost-button">Visit Website</p></a>
+					</div>
+					<div className="col-md-8">
+						<img src="../../images/find-a-spot-screenshot.png" alt="Screenshot of Find a Spot application" className="img-responsive screenshot"/>
+					</div>
+				</div>
 
 
-				<div className="well well-lg">
-					<a href="http://drumr.getforge.io/"><h3 className="title-h3">Drumr</h3></a>
-					<p>A way to find your favorite drummers</p>
-				</div>
-				<div className="well well-lg">
-					<a href="http://tiy-austin-front-end-engineering.github.io/"><h3 className="title-h3">Iron Quizzes</h3></a>
-					<p>Letting teachers create online quizzes and access statistics</p>
-				</div>
-				<div className="well well-lg">
-					<a href="#"><h3 className="title-h3">Find a Spot</h3></a>
-					<p>Percussion teachers from a selected area of North Texas can access historical data about their schools</p>
-				</div>
-				<div className="well well-lg">
-					<a href="#"><h3 className="title-h3">We·Blog</h3></a>
-					<p>An app that lets users create blog posts and post them to a blog feed</p>
-				</div>
 			</div>
 		);
 	}

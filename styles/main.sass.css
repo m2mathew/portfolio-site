@@ -64,11 +64,24 @@ nav #menu .active a {
 .work-box {
   padding-top: 2em;
   width: 100%; }
-  .work-box .well a {
-    color: #0F2859; }
-    .work-box .well a:hover {
-      color: #454174; }
-  .work-box .well .title-h3 {
+  .work-box .card .ghost-button {
+    color: #4c4c4c;
+    background: none;
+    border: 1px solid #4c4c4c;
+    font-size: 16px;
+    padding: 9px 30px;
+    font-weight: normal;
+    text-decoration: none;
+    min-width: 120px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: "Open Sans", sans-serif; }
+    .work-box .card .ghost-button:hover, .work-box .card .ghost-button:focus {
+      color: #f16529;
+      border: 1px solid #f16529;
+      background: none;
+      text-decoration: none; }
+  .work-box .card .title-h1 {
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase; }
 
@@ -78,6 +91,24 @@ nav #menu .active a {
     color: #0F2859; }
     .resume-box .body-text a:hover {
       color: #454174; }
+
+.resume-box .ghost-button {
+  color: #4c4c4c;
+  background: none;
+  border: 1px solid #4c4c4c;
+  font-size: 16px;
+  padding: 9px 30px;
+  font-weight: normal;
+  text-decoration: none;
+  min-width: 120px;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif; }
+  .resume-box .ghost-button:hover, .resume-box .ghost-button:focus {
+    color: #f16529;
+    border: 1px solid #f16529;
+    background: none;
+    text-decoration: none; }
 
 .resume-box .well {
   background-color: #D4D8EF; }

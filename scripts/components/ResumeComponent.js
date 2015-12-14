@@ -9,7 +9,7 @@ module.exports = React.createClass({
 	render () {
 
 		return (
-			<section className="container resume-box">
+			<section className="container-fluid resume-box">
 				<TitleComponent />
 
 				<div className="row col-sm-12">
@@ -63,7 +63,7 @@ module.exports = React.createClass({
 					</div>
 				</div>
 
-				<button id="resume-button" className="btn-lg col-lg-8 col-lg-offset-2"><a href="../../assets/Resume-Michael_Mathew.pdf">Get the .pdf!</a></button>
+				<a href="../../assets/Resume-Michael_Mathew.pdf"><p className="ghost-button">Get the .pdf</p></a>
 
 			</section>
 		);

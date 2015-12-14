@@ -31752,7 +31752,7 @@ module.exports = React.createClass({
 
 		return React.createElement(
 			'div',
-			{ className: 'container about-box' },
+			{ className: 'container-fluid about-box' },
 			React.createElement(
 				'div',
 				{ className: 'row text-justify' },
@@ -31764,7 +31764,7 @@ module.exports = React.createClass({
 						null,
 						'HOW TO MAKE A FRONT END DEVELOPER NAMED MIKE'
 					),
-					' • FALL IN LOVE WITH LEARNING • GET A TRS-80 FROM UNCLE RICKY • START HITTING THINGS WITH DRUMSTICKS • PLAY LOTS OF VIDEO GAMES • TAKE TWO YEARS OF COMPUTER SCIENCE IN HIGH SCHOOL • SIT NEXT TO FUTURE WIFE IN COMPUTER SCIENCE • MAJOR IN MUSIC EDUCATION IN COLLEGE • TOUR AND PERFORM WITH A DRUM AND BUGLE CORPS • SPEND EQUAL TIME WRITING MUSIC ON A COMPUTER AS PERFORMING IT • GET MARRIED TO YOUR HIGH SCHOOL SWEETHEART • GRADUATE COLLEGE AND TEACH MUSIC FOR OVER A DECADE • MAKE WEBSITES FOR YOUR BAND PROGRAMS • HAVE THREE KIDS ALONG THE WAY • BECOME THE GUARDIAN FOR YOUR BROTHER • REALIZE THAT YOU SPEND AS MUCH TIME FORMATTING AN EMAIL AS TEACHING • START LEARNING MORE CODE • SWITCH GEARS FROM BEING A BAND DIRECTOR TO A WEB DEVELOPER • ENROLL AT A CODE SCHOOL THREE HOURS FROM YOUR FAMILY • KEEP LEARNING AND MAKING AWESOME THINGS.'
+					' • FALL IN LOVE WITH LEARNING • GET A TRS-80 FROM UNCLE RICKY AND LEARN TO PROGRAM IN BASIC • START HITTING THINGS WITH DRUMSTICKS • PLAY LOTS OF VIDEO GAMES • TAKE TWO YEARS OF COMPUTER SCIENCE IN HIGH SCHOOL USING C++ AND TURBO PASCAL • SIT NEXT TO FUTURE WIFE IN COMPUTER SCIENCE • MAJOR IN MUSIC EDUCATION IN COLLEGE • TOUR AND PERFORM WITH A DRUM AND BUGLE CORPS • SPEND EQUAL TIME WRITING MUSIC ON A COMPUTER AS PERFORMING IT • GET MARRIED TO YOUR HIGH SCHOOL SWEETHEART • GRADUATE COLLEGE AND TEACH MUSIC FOR OVER A DECADE • MAKE WEBSITES FOR YOUR BAND PROGRAMS • HAVE THREE KIDS ALONG THE WAY • BECOME THE GUARDIAN FOR YOUR BROTHER • REALIZE THAT YOU SPEND AS MUCH TIME FORMATTING AN EMAIL AS TEACHING • START LEARNING MORE CODE • SWITCH GEARS FROM BEING A BAND DIRECTOR TO A WEB DEVELOPER • ENROLL AT A CODE SCHOOL THREE HOURS FROM HOME • KEEP LEARNING AND MAKING AWESOME THINGS.'
 				)
 			)
 		);
@@ -31786,7 +31786,7 @@ module.exports = React.createClass({
 
 		return React.createElement(
 			'section',
-			{ className: 'container home-box' },
+			{ className: 'container-fluid home-box col-lg-12' },
 			React.createElement(TitleComponent, null),
 			React.createElement(AboutComponent, null),
 			React.createElement(WorkComponent, null)
@@ -31887,7 +31887,7 @@ module.exports = React.createClass({
 
 		return React.createElement(
 			'section',
-			{ className: 'container resume-box' },
+			{ className: 'container-fluid resume-box' },
 			React.createElement(TitleComponent, null),
 			React.createElement(
 				'div',
@@ -32114,12 +32114,12 @@ module.exports = React.createClass({
 				)
 			),
 			React.createElement(
-				'button',
-				{ id: 'resume-button', className: 'btn-lg col-lg-8 col-lg-offset-2' },
+				'a',
+				{ href: '../../assets/Resume-Michael_Mathew.pdf' },
 				React.createElement(
-					'a',
-					{ href: '../../assets/Resume-Michael_Mathew.pdf' },
-					'Get the .pdf!'
+					'p',
+					{ className: 'ghost-button' },
+					'Get the .pdf'
 				)
 			)
 		);
@@ -32165,77 +32165,134 @@ module.exports = React.createClass({
 
 		return React.createElement(
 			'div',
-			{ className: 'container work-box' },
+			{ className: 'container-fluid work-box' },
 			React.createElement(
 				'div',
-				{ className: 'well well-lg' },
+				{ className: 'row card' },
 				React.createElement(
-					'a',
-					{ href: 'http://drumr.getforge.io/' },
+					'div',
+					{ className: 'col-md-4' },
 					React.createElement(
-						'h3',
-						{ className: 'title-h3' },
+						'h1',
+						{ className: 'title-h1' },
 						'Drumr'
+					),
+					React.createElement(
+						'p',
+						null,
+						'A way to find and keep track of your favorite drummers. This application was designed and built in a two-week period as a final project for The Iron Yard. It uses Masonry to organize the photos and React to load the information quicly.'
+					),
+					React.createElement(
+						'p',
+						null,
+						React.createElement(
+							'strong',
+							null,
+							'Built With'
+						),
+						React.createElement('br', null),
+						'HTML5 / CSS3 / React.js / Backbone.js / Parse API / Masonry / Sass'
+					),
+					React.createElement(
+						'a',
+						{ href: '#', target: '_blank' },
+						React.createElement(
+							'p',
+							{ className: 'ghost-button' },
+							'Visit Website'
+						)
 					)
 				),
 				React.createElement(
-					'p',
-					null,
-					'A way to find your favorite drummers'
+					'div',
+					{ className: 'col-md-8' },
+					React.createElement('img', { src: '../../images/drumr-screenshot.png', alt: 'Screenshot of drummer application', className: 'img-responsive screenshot' })
 				)
 			),
 			React.createElement(
 				'div',
-				{ className: 'well well-lg' },
+				{ className: 'row card' },
 				React.createElement(
-					'a',
-					{ href: 'http://tiy-austin-front-end-engineering.github.io/' },
+					'div',
+					{ className: 'col-md-4' },
 					React.createElement(
-						'h3',
-						{ className: 'title-h3' },
+						'h1',
+						{ className: 'title-h1' },
 						'Iron Quizzes'
+					),
+					React.createElement(
+						'p',
+						null,
+						'Working with 16 developers using React, Parse, and Skeleton, this app lets teachers login to create/edit tests and view multiple kinds of analytics. Students can also login and take tests assigned to their specific class. Most of my work involved the analytics data for teachers to access.'
+					),
+					React.createElement(
+						'p',
+						null,
+						React.createElement(
+							'strong',
+							null,
+							'Built With'
+						),
+						React.createElement('br', null),
+						'HTML5 / CSS3 / React.js / Backbone.js / Parse API / Sass'
+					),
+					React.createElement(
+						'a',
+						{ href: 'http://drumr.getforge.io/', target: '_blank' },
+						React.createElement(
+							'p',
+							{ className: 'ghost-button' },
+							'Visit Website'
+						)
 					)
 				),
 				React.createElement(
-					'p',
-					null,
-					'Letting teachers create online quizzes and access statistics'
+					'div',
+					{ className: 'col-md-8' },
+					React.createElement('img', { src: '../../images/iron-quizzes-screenshot.png', alt: 'Screenshot of Iron Quizzes application', className: 'img-responsive screenshot' })
 				)
 			),
 			React.createElement(
 				'div',
-				{ className: 'well well-lg' },
+				{ className: 'row card' },
 				React.createElement(
-					'a',
-					{ href: '#' },
+					'div',
+					{ className: 'col-md-4' },
 					React.createElement(
-						'h3',
-						{ className: 'title-h3' },
+						'h1',
+						{ className: 'title-h1' },
 						'Find a Spot'
-					)
-				),
-				React.createElement(
-					'p',
-					null,
-					'Percussion teachers from a selected area of North Texas can access historical data about their schools'
-				)
-			),
-			React.createElement(
-				'div',
-				{ className: 'well well-lg' },
-				React.createElement(
-					'a',
-					{ href: '#' },
+					),
 					React.createElement(
-						'h3',
-						{ className: 'title-h3' },
-						'We·Blog'
+						'p',
+						null,
+						'Constructed with 2 front-end developers, 1 back-end developer, and 1 designer, this app uses Backbone and jQuery to let a logged-in user find an open parking spot at a selection of Austin restaurants. This was conceived, designed, and deployed in four days.\u2028'
+					),
+					React.createElement(
+						'p',
+						null,
+						React.createElement(
+							'strong',
+							null,
+							'Built With'
+						),
+						React.createElement('br', null),
+						'HTML5 / CSS3 / Backbone.js / Sass'
+					),
+					React.createElement(
+						'a',
+						{ href: 'http://tiy-austin-front-end-engineering.github.io/', target: '_blank' },
+						React.createElement(
+							'p',
+							{ className: 'ghost-button' },
+							'Visit Website'
+						)
 					)
 				),
 				React.createElement(
-					'p',
-					null,
-					'An app that lets users create blog posts and post them to a blog feed'
+					'div',
+					{ className: 'col-md-8' },
+					React.createElement('img', { src: '../../images/find-a-spot-screenshot.png', alt: 'Screenshot of Find a Spot application', className: 'img-responsive screenshot' })
 				)
 			)
 		);

@@ -95,17 +95,30 @@ nav {
 	padding-top: 2em;
 	width: 100%;
 
-	.well {
+	.card {
 
-		a {
-			color: #0F2859;
+		.ghost-button {
+			color: #4c4c4c;
+			background: none;
+			border: 1px solid #4c4c4c;
+			font-size: 16px;
+			padding: 9px 30px;
+			font-weight: normal;
+			text-decoration: none;
+			min-width: 120px;
+			text-transform: uppercase;
+			display: inline-block;
+			font-family: $header;
 
-			&:hover {
-				color: $dark-purple;
+			&:hover, &:focus {
+				color: #f16529;
+				border: 1px solid #f16529;
+				background: none;
+				text-decoration: none;
 			}
 		}
 
-		.title-h3 {
+		.title-h1 {
 			font-family: $header;
 			text-transform: uppercase;
 		}
@@ -123,6 +136,27 @@ nav {
 			&:hover {
 				color: $dark-purple;
 			}
+		}
+	}
+
+	.ghost-button {
+		color: #4c4c4c;
+		background: none;
+		border: 1px solid #4c4c4c;
+		font-size: 16px;
+		padding: 9px 30px;
+		font-weight: normal;
+		text-decoration: none;
+		min-width: 120px;
+		text-transform: uppercase;
+		display: inline-block;
+		font-family: $header;
+
+		&:hover, &:focus {
+			color: #f16529;
+			border: 1px solid #f16529;
+			background: none;
+			text-decoration: none;
 		}
 	}
 
