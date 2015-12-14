@@ -62,6 +62,15 @@ nav #menu .active a {
     line-height: 2; }
   .about-box a {
     color: #41BEDD; }
+  .about-box .modal {
+    padding: 1em; }
+    .about-box .modal .modal-pic {
+      width: 100%;
+      padding: 1em; }
+    .about-box .modal .modal-title {
+      padding-right: 2em;
+      padding-bottom: 2em;
+      padding-left: 2em; }
 
 .work-box {
   padding-top: 2em;
