@@ -47700,7 +47700,7 @@ module.exports = React.createClass({
 					React.createElement(
 						'a',
 						{ 'data-toggle': 'modal', href: '#dci', className: 'text-callout' },
-						'TOUR AND PERFORM WITH A DRUM AND BUGLE CORPS'
+						' TOUR AND PERFORM WITH A DRUM AND BUGLE CORPS '
 					),
 					React.createElement(
 						'div',
@@ -47728,12 +47728,160 @@ module.exports = React.createClass({
 								React.createElement(
 									'h4',
 									{ className: 'modal-title' },
-									'I marched with the Troopers in 1996 and Carolina Crown in 2000, both playing quads in the drum line. This experience is unlike anything else. We traveled on charter buses for a summer and stayed in high schools in each city. It is kind of like the army meets marching band.'
+									'I marched with the Troopers in 1996 and Carolina Crown in 2000 (pictured, far right), both playing quads in the drum line. This experience is unlike anything else. We traveled on charter buses for a summer and stayed in high schools in each city. It is kind of like the army meets marching band. '
 								)
 							)
 						)
 					),
-					'• SPEND EQUAL TIME WRITING MUSIC ON A COMPUTER AS PERFORMING IT • GET MARRIED TO YOUR HIGH SCHOOL SWEETHEART • GRADUATE COLLEGE AND TEACH MUSIC FOR OVER A DECADE • MAKE WEBSITES FOR YOUR BAND PROGRAMS • HAVE THREE KIDS ALONG THE WAY • BECOME THE GUARDIAN FOR YOUR BROTHER • REALIZE THAT YOU SPEND AS MUCH TIME FORMATTING AN EMAIL AS TEACHING • START LEARNING MORE CODE • SWITCH GEARS FROM BEING A BAND DIRECTOR TO A WEB DEVELOPER • ENROLL AT A CODE SCHOOL THREE HOURS FROM HOME • KEEP LEARNING AND MAKING AWESOME THINGS.'
+					'• SPEND EQUAL TIME WRITING MUSIC ON A COMPUTER AS PERFORMING IT •',
+					React.createElement(
+						'a',
+						{ 'data-toggle': 'modal', href: '#wedding', className: 'text-callout' },
+						' GET MARRIED TO YOUR HIGH SCHOOL SWEETHEART '
+					),
+					React.createElement(
+						'div',
+						{ className: 'modal fade', id: 'wedding', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel', 'aria-hidden': 'true' },
+						React.createElement(
+							'div',
+							{ className: 'modal-dialog modal-lg' },
+							React.createElement(
+								'div',
+								{ className: 'modal-content' },
+								React.createElement(
+									'div',
+									null,
+									React.createElement(
+										'button',
+										{ type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-hidden': 'true' },
+										'×'
+									)
+								),
+								React.createElement(
+									'div',
+									{ className: 'modal-body' },
+									React.createElement('img', { className: 'modal-pic', src: '../../images/michael-and-melissa.jpg', alt: 'Michael and Melissa heading to the reception' })
+								),
+								React.createElement(
+									'h4',
+									{ className: 'modal-title' },
+									'Melissa and I were married in December 2000 after dating since high school! Still going strong with a great family!'
+								)
+							)
+						)
+					),
+					'• GRADUATE COLLEGE AND TEACH MUSIC FOR OVER A DECADE • MAKE WEBSITES FOR YOUR BAND PROGRAMS •',
+					React.createElement(
+						'a',
+						{ 'data-toggle': 'modal', href: '#kids', className: 'text-callout' },
+						' HAVE THREE KIDS ALONG THE WAY '
+					),
+					React.createElement(
+						'div',
+						{ className: 'modal fade', id: 'kids', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel', 'aria-hidden': 'true' },
+						React.createElement(
+							'div',
+							{ className: 'modal-dialog modal-lg' },
+							React.createElement(
+								'div',
+								{ className: 'modal-content' },
+								React.createElement(
+									'div',
+									null,
+									React.createElement(
+										'button',
+										{ type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-hidden': 'true' },
+										'×'
+									)
+								),
+								React.createElement(
+									'div',
+									{ className: 'modal-body' },
+									React.createElement('img', { className: 'modal-pic', src: '../../images/kids.jpg', alt: 'The entrance to The Iron Yard-Austin campus' })
+								),
+								React.createElement(
+									'h4',
+									{ className: 'modal-title' },
+									'Isaac (b.2002), Alexis (b.2005), and Olivia (b.2012) are enjoying beautiful downtown Dallas around Thanksgiving 2015. Far right is my brother Stephen (b.1998)'
+								)
+							)
+						)
+					),
+					'• REALIZE THAT YOU SPEND AS MUCH TIME FORMATTING AN EMAIL AS TEACHING •',
+					React.createElement(
+						'a',
+						{ 'data-toggle': 'modal', href: '#bro', className: 'text-callout' },
+						' BECOME THE GUARDIAN FOR YOUR LITTLE BROTHER '
+					),
+					React.createElement(
+						'div',
+						{ className: 'modal fade', id: 'bro', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel', 'aria-hidden': 'true' },
+						React.createElement(
+							'div',
+							{ className: 'modal-dialog modal-lg' },
+							React.createElement(
+								'div',
+								{ className: 'modal-content' },
+								React.createElement(
+									'div',
+									null,
+									React.createElement(
+										'button',
+										{ type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-hidden': 'true' },
+										'×'
+									)
+								),
+								React.createElement(
+									'div',
+									{ className: 'modal-body' },
+									React.createElement('img', { className: 'modal-pic', src: '../../images/stephen-and-mike.jpg', alt: 'Mike with his little brother Stephen' })
+								),
+								React.createElement(
+									'h4',
+									{ className: 'modal-title' },
+									'Stephen and I were hanging around at the Top of the Rock in Manhattan, NYC in May 2015.'
+								)
+							)
+						)
+					),
+					'• START LEARNING MORE CODE • SWITCH GEARS FROM BEING A BAND DIRECTOR TO A WEB DEVELOPER •',
+					React.createElement(
+						'a',
+						{ 'data-toggle': 'modal', href: '#tiy', className: 'text-callout' },
+						' ENROLL AT A CODE SCHOOL THREE HOURS FROM HOME '
+					),
+					React.createElement(
+						'div',
+						{ className: 'modal fade', id: 'tiy', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel', 'aria-hidden': 'true' },
+						React.createElement(
+							'div',
+							{ className: 'modal-dialog modal-lg' },
+							React.createElement(
+								'div',
+								{ className: 'modal-content' },
+								React.createElement(
+									'div',
+									null,
+									React.createElement(
+										'button',
+										{ type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-hidden': 'true' },
+										'×'
+									)
+								),
+								React.createElement(
+									'div',
+									{ className: 'modal-body' },
+									React.createElement('img', { className: 'modal-pic', src: '../../images/iron-yard-austin.jpg', alt: 'The entrance to The Iron Yard-Austin campus' })
+								),
+								React.createElement(
+									'h4',
+									{ className: 'modal-title' },
+									'My time in code school at The Iron Yard-Austin was an immersive dive into front end coding and development. My instructor Aaron Larner always gave us the nudge we needed to solve problems ourselves. We also used Agile methodology for three projects and built applications on teams  with back end and design students. '
+								)
+							)
+						)
+					),
+					'• KEEP LEARNING AND MAKING AWESOME THINGS.'
 				)
 			)
 		);

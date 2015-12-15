@@ -61,7 +61,7 @@ nav #menu .active a {
     font-weight: 100;
     line-height: 2; }
   .about-box a {
-    color: #41BEDD; }
+    color: #9640B9; }
   .about-box .modal {
     padding: 1em; }
     .about-box .modal .modal-pic {
@@ -143,9 +143,7 @@ nav #menu .active a {
   .resume-box .well {
     background-color: #D4D8EF; }
     .resume-box .well:hover, .resume-box .well:focus {
-      background-color: #CCC4EA;
-      padding-left: 0.9em;
-      border: 1px solid #bbb; }
+      padding-left: 0.85em; }
   .resume-box .indent {
     padding-left: 1em; }
   .resume-box .row h3 {
