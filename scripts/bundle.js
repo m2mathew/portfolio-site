@@ -47696,11 +47696,11 @@ module.exports = React.createClass({
 						null,
 						'HOW TO MAKE A FRONT END DEVELOPER NAMED MIKE'
 					),
-					' • FALL IN LOVE WITH LEARNING • GET A TRS-80 FROM UNCLE RICKY AND LEARN TO PROGRAM IN BASIC • START HITTING THINGS WITH DRUMSTICKS • PLAY LOTS OF VIDEO GAMES • TAKE TWO YEARS OF COMPUTER SCIENCE IN HIGH SCHOOL USING C++ AND TURBO PASCAL • SIT NEXT TO FUTURE WIFE IN COMPUTER SCIENCE • MAJOR IN MUSIC EDUCATION IN COLLEGE •',
+					' • FALL IN LOVE WITH LEARNING • GET A TRS-80 FROM UNCLE RICKY AND LEARN TO PROGRAM IN BASIC • START HITTING THINGS WITH DRUMSTICKS • PLAY LOTS OF VIDEO GAMES • TAKE TWO YEARS OF COMPUTER SCIENCE IN HIGH SCHOOL USING C++ AND TURBO PASCAL • SIT NEXT TO FUTURE WIFE IN COMPUTER SCIENCE • MAJOR IN MUSIC EDUCATION IN COLLEGE • ',
 					React.createElement(
 						'a',
 						{ 'data-toggle': 'modal', href: '#dci', className: 'text-callout' },
-						' TOUR AND PERFORM WITH A DRUM AND BUGLE CORPS '
+						'TOUR AND PERFORM WITH A DRUM AND BUGLE CORPS'
 					),
 					React.createElement(
 						'div',
@@ -47733,11 +47733,11 @@ module.exports = React.createClass({
 							)
 						)
 					),
-					'• SPEND EQUAL TIME WRITING MUSIC ON A COMPUTER AS PERFORMING IT •',
+					' • SPEND EQUAL TIME WRITING MUSIC ON A COMPUTER AS PERFORMING IT • ',
 					React.createElement(
 						'a',
 						{ 'data-toggle': 'modal', href: '#wedding', className: 'text-callout' },
-						' GET MARRIED TO YOUR HIGH SCHOOL SWEETHEART '
+						'GET MARRIED TO YOUR HIGH SCHOOL SWEETHEART'
 					),
 					React.createElement(
 						'div',
@@ -47770,11 +47770,48 @@ module.exports = React.createClass({
 							)
 						)
 					),
-					'• GRADUATE COLLEGE AND TEACH MUSIC FOR OVER A DECADE • MAKE WEBSITES FOR YOUR BAND PROGRAMS •',
+					' • GRADUATE COLLEGE AND TEACH MUSIC FOR OVER A DECADE • ',
+					React.createElement(
+						'a',
+						{ 'data-toggle': 'modal', href: '#trinity', className: 'text-callout' },
+						'CONVINCE STUDENTS TO WORK HARD ENOUGH TO WIN AN INTERNATIONAL COMPETITION'
+					),
+					React.createElement(
+						'div',
+						{ className: 'modal fade', id: 'trinity', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel', 'aria-hidden': 'true' },
+						React.createElement(
+							'div',
+							{ className: 'modal-dialog modal-lg' },
+							React.createElement(
+								'div',
+								{ className: 'modal-content' },
+								React.createElement(
+									'div',
+									null,
+									React.createElement(
+										'button',
+										{ type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-hidden': 'true' },
+										'×'
+									)
+								),
+								React.createElement(
+									'div',
+									{ className: 'modal-body' },
+									React.createElement('img', { className: 'modal-pic', src: '../../images/trinity.jpg', alt: 'The entrance to The Iron Yard-Austin campus' })
+								),
+								React.createElement(
+									'h4',
+									{ className: 'modal-title' },
+									'As winners of the International Percussion Ensemble Contest, my students at Trinity High School were invited to perform at the 2006 Percussive Arts Society International Convention in Austin, Texas. I commissioned a new work for percussion ensemble from composer Dwayne Rice that we premiered at this concert. The students played great, and we had a blast!'
+								)
+							)
+						)
+					),
+					' • MAKE WEBSITES FOR YOUR BAND PROGRAMS • ',
 					React.createElement(
 						'a',
 						{ 'data-toggle': 'modal', href: '#kids', className: 'text-callout' },
-						' HAVE THREE KIDS ALONG THE WAY '
+						'HAVE THREE KIDS ALONG THE WAY'
 					),
 					React.createElement(
 						'div',
@@ -47807,11 +47844,11 @@ module.exports = React.createClass({
 							)
 						)
 					),
-					'• REALIZE THAT YOU SPEND AS MUCH TIME FORMATTING AN EMAIL AS TEACHING •',
+					' • REALIZE THAT YOU SPEND AS MUCH TIME FORMATTING AN EMAIL AS TEACHING • ',
 					React.createElement(
 						'a',
 						{ 'data-toggle': 'modal', href: '#bro', className: 'text-callout' },
-						' BECOME THE GUARDIAN FOR YOUR LITTLE BROTHER '
+						'BECOME THE GUARDIAN FOR YOUR LITTLE BROTHER'
 					),
 					React.createElement(
 						'div',
@@ -47844,11 +47881,11 @@ module.exports = React.createClass({
 							)
 						)
 					),
-					'• START LEARNING MORE CODE • SWITCH GEARS FROM BEING A BAND DIRECTOR TO A WEB DEVELOPER •',
+					' • START LEARNING MORE CODE • SWITCH GEARS FROM BEING A BAND DIRECTOR TO A WEB DEVELOPER • ',
 					React.createElement(
 						'a',
 						{ 'data-toggle': 'modal', href: '#tiy', className: 'text-callout' },
-						' ENROLL AT A CODE SCHOOL THREE HOURS FROM HOME '
+						'ENROLL AT A CODE SCHOOL THREE HOURS FROM HOME'
 					),
 					React.createElement(
 						'div',
@@ -47881,7 +47918,7 @@ module.exports = React.createClass({
 							)
 						)
 					),
-					'• KEEP LEARNING AND MAKING AWESOME THINGS.'
+					' • KEEP LEARNING AND MAKING AWESOME THINGS.'
 				)
 			)
 		);
@@ -47903,7 +47940,7 @@ module.exports = React.createClass({
 
 		return React.createElement(
 			'section',
-			{ className: 'container-fluid home-box col-lg-12' },
+			{ className: 'home-box row col-sm-12' },
 			React.createElement(TitleComponent, null),
 			React.createElement(AboutComponent, null),
 			React.createElement(WorkComponent, null)
@@ -48004,7 +48041,7 @@ module.exports = React.createClass({
 
 		return React.createElement(
 			'section',
-			{ className: 'container resume-box' },
+			{ className: 'row resume-box' },
 			React.createElement(TitleComponent, null),
 			React.createElement(
 				'div',
@@ -48232,7 +48269,7 @@ module.exports = React.createClass({
 			),
 			React.createElement(
 				'a',
-				{ href: '../../assets/Resume-Michael_Mathew.pdf' },
+				{ href: '../../assets/Resume-Michael_Mathew.pdf', target: '_blank' },
 				React.createElement(
 					'p',
 					{ className: 'ghost-button' },

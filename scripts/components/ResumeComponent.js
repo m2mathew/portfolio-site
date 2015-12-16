@@ -9,7 +9,7 @@ module.exports = React.createClass({
 	render () {
 
 		return (
-			<section className="container resume-box">
+			<section className="row resume-box">
 				<TitleComponent />
 
 				<div className="row col-sm-12">
@@ -63,7 +63,7 @@ module.exports = React.createClass({
 					</div>
 				</div>
 
-				<a href="../../assets/Resume-Michael_Mathew.pdf"><p className="ghost-button">Get the .pdf</p></a>
+				<a href="../../assets/Resume-Michael_Mathew.pdf" target="_blank"><p className="ghost-button">Get the .pdf</p></a>
 
 			</section>
 		);

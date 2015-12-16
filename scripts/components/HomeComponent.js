@@ -10,7 +10,7 @@ module.exports = React.createClass({
 	render () {
 
 		return (
-			<section className="container-fluid home-box col-lg-12">
+			<section className="home-box row col-sm-12">
 				<TitleComponent />
 
 				<AboutComponent />
