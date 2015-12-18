@@ -263,24 +263,25 @@ footer {
 	border-top: 5px solid $dark-purple;
 
 	#twitter {
-		width: 60px;
-		height: 60px;
-		margin-right: 1.5em;
+		width: 50px;
+		height: 50px;
+		margin-right: 0.75em;
 	}
 
 	#github {
-		width: 55px;
-		height: 55px;
-		margin-right: 2.25em;
+		width: 45px;
+		height: 45px;
+		margin-right: 1em;
 	}
 
 	#linkedin {
-		width: 55px;
-		height: 44px;
-		margin-right: 2em;
+		width: 45px;
+		height: 34px;
+		margin-right: 1em;
 	}
 
 	span {
+		display: block;
 
 		a {
 			color: $footer-link;
@@ -366,6 +367,32 @@ footer {
 		.indent {
 			padding-left: 1.5em;
 			padding-right: 1.5em;
+		}
+	}
+
+	footer {
+
+		#twitter {
+			width: 60px;
+			height: 60px;
+			margin-right: 1.5em;
+		}
+
+		#github {
+			width: 55px;
+			height: 55px;
+			margin-right: 2.25em;
+		}
+
+		#linkedin {
+			width: 55px;
+			height: 44px;
+			margin-right: 2em;
+		}
+
+		span {
+			display: inline;
+			padding-top: 1em;
 		}
 	}
 }

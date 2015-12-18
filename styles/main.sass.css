@@ -181,21 +181,23 @@ footer {
   padding-left: 2em;
   border-top: 5px solid #454174; }
   footer #twitter {
-    width: 60px;
-    height: 60px;
-    margin-right: 1.5em; }
+    width: 50px;
+    height: 50px;
+    margin-right: 0.75em; }
   footer #github {
-    width: 55px;
-    height: 55px;
-    margin-right: 2.25em; }
+    width: 45px;
+    height: 45px;
+    margin-right: 1em; }
   footer #linkedin {
-    width: 55px;
-    height: 44px;
-    margin-right: 2em; }
-  footer span a {
-    color: #0F2859; }
-    footer span a:hover {
-      color: #454174; }
+    width: 45px;
+    height: 34px;
+    margin-right: 1em; }
+  footer span {
+    display: block; }
+    footer span a {
+      color: #0F2859; }
+      footer span a:hover {
+        color: #454174; }
 
 @-webkit-keyframes pulse {
   0% {
@@ -234,7 +236,22 @@ footer {
     padding-right: 0; }
   .resume-box .indent {
     padding-left: 1.5em;
-    padding-right: 1.5em; } }
+    padding-right: 1.5em; }
+  footer #twitter {
+    width: 60px;
+    height: 60px;
+    margin-right: 1.5em; }
+  footer #github {
+    width: 55px;
+    height: 55px;
+    margin-right: 2.25em; }
+  footer #linkedin {
+    width: 55px;
+    height: 44px;
+    margin-right: 2em; }
+  footer span {
+    display: inline;
+    padding-top: 1em; } }
 
 @media screen and (min-width: 992px) {
   .title h1 {
