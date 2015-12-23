@@ -1,7 +1,7 @@
 'use strict';
 
-let React = require('react');
-let Modal = require('react-bootstrap').Modal;
+const React = require('react');
+const Modal = require('react-bootstrap').Modal;
 
 module.exports = React.createClass({
 	getInitialState() {

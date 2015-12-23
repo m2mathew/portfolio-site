@@ -1,15 +1,15 @@
 'use strict';
 
-let React = require('react');
-let ReactDOM = require('react-dom');
-let Backbone = require('backbone');
+const React = require('react');
+const ReactDOM = require('react-dom');
+const Backbone = require('backbone');
 
 window.$ = require('jquery');
 window.jQuery = $;
 
-let HomeComponent = require('./components/HomeComponent');
-let NavigationComponent = require('./components/NavigationComponent');
-let ResumeComponent = require('./components/ResumeComponent');
+const HomeComponent = require('./components/HomeComponent');
+const NavigationComponent = require('./components/NavigationComponent');
+const ResumeComponent = require('./components/ResumeComponent');
 
 let app = document.getElementById('app');
 let nav = document.getElementById('nav');

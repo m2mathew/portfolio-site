@@ -1,7 +1,7 @@
 'use strict';
 
-let React = require('react');
-let TitleComponent = require('./TitleComponent');
+const React = require('react');
+const TitleComponent = require('./TitleComponent');
 
 module.exports = React.createClass({
 

@@ -1,9 +1,9 @@
 'use strict';
 
-let React = require('react');
-let TitleComponent = require('./TitleComponent');
-let AboutComponent = require('./AboutComponent');
-let WorkComponent = require('./WorkComponent');
+const React = require('react');
+const TitleComponent = require('./TitleComponent');
+const AboutComponent = require('./AboutComponent');
+const WorkComponent = require('./WorkComponent');
 
 module.exports = React.createClass({
 

@@ -1,7 +1,7 @@
 'use strict';
 
-let React = require('react');
-let Backbone = require('backbone');
+const React = require('react');
+const Backbone = require('backbone');
 
 
 module.exports = React.createClass({
