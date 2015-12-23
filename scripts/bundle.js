@@ -48113,6 +48113,39 @@ module.exports = React.createClass({
 				React.createElement(
 					'h3',
 					{ className: 'well' },
+					'Experience'
+				),
+				React.createElement(
+					'div',
+					{ className: 'body-text' },
+					React.createElement(
+						'p',
+						null,
+						React.createElement(
+							'strong',
+							null,
+							'Call-Em-all'
+						),
+						' - Frisco, Texas'
+					),
+					React.createElement(
+						'p',
+						{ className: 'indent' },
+						'Front End Developer (started December 2015)'
+					),
+					React.createElement(
+						'p',
+						{ className: 'indent' },
+						'Primarily work on engineering team to develop the next iteration of the desktop client application. Help solve customer support issues that arise on the personal and technical levels. Primarily using React.js and node.js. All team members work to contribute to the entire customer experience.'
+					)
+				)
+			),
+			React.createElement(
+				'div',
+				{ className: 'row' },
+				React.createElement(
+					'h3',
+					{ className: 'well' },
 					'Education'
 				),
 				React.createElement(

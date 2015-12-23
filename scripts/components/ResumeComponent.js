@@ -31,6 +31,15 @@ module.exports = React.createClass({
 				</div>
 
 				<div className="row">
+					<h3 className="well">Experience</h3>
+					<div className="body-text">
+						<p><strong>Call-Em-all</strong> - Frisco, Texas</p>
+						<p className="indent">Front End Developer (started December 2015)</p>
+						<p className="indent">Primarily work on engineering team to develop the next iteration of the desktop client application. Help solve customer support issues that arise on the personal and technical levels. Primarily using React.js and node.js. All team members work to contribute to the entire customer experience.</p>
+					</div>
+				</div>
+
+				<div className="row">
 					<h3 className="well">Education</h3>
 					<div className="body-text">
 						<p><strong>The Iron Yard</strong> - Austin, Texas</p>
