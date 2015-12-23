@@ -48041,11 +48041,11 @@ module.exports = React.createClass({
 
 		return React.createElement(
 			'section',
-			{ className: 'row resume-box' },
+			{ className: 'row resume-box col-sm-12' },
 			React.createElement(TitleComponent, null),
 			React.createElement(
 				'div',
-				{ className: 'row col-sm-12' },
+				{ className: 'row' },
 				React.createElement(
 					'h3',
 					{ className: 'well' },
@@ -48068,7 +48068,7 @@ module.exports = React.createClass({
 			),
 			React.createElement(
 				'div',
-				{ className: 'row col-sm-12' },
+				{ className: 'row' },
 				React.createElement(
 					'h3',
 					{ className: 'well' },
@@ -48109,7 +48109,7 @@ module.exports = React.createClass({
 			),
 			React.createElement(
 				'div',
-				{ className: 'row col-sm-12' },
+				{ className: 'row' },
 				React.createElement(
 					'h3',
 					{ className: 'well' },
@@ -48157,7 +48157,7 @@ module.exports = React.createClass({
 			),
 			React.createElement(
 				'div',
-				{ className: 'row col-sm-12' },
+				{ className: 'row' },
 				React.createElement(
 					'h3',
 					{ className: 'well' },
@@ -48220,7 +48220,7 @@ module.exports = React.createClass({
 			),
 			React.createElement(
 				'div',
-				{ className: 'row col-sm-12' },
+				{ className: 'row' },
 				React.createElement(
 					'h3',
 					{ className: 'well' },
