@@ -14,7 +14,7 @@ module.exports = React.createClass({
 				<div className="row card">
 					<div className="col-md-4">
 						<h1 className="title-h1">Drumr</h1>
-						<p>A way to find and keep track of your favorite drummers. This application was designed and built in a two-week period as a final project for The Iron Yard. It uses Masonry to organize the photos and React to load the information quicly.</p>
+						<p>A way to find and keep track of your favorite drummers. This application was designed and built in a two-week period as a final project for The Iron Yard. It uses Masonry to organize the photos and React to load the information quickly.</p>
 						<p><strong>Built With</strong><br />HTML5 / CSS3 / React.js / Backbone.js / Parse API / Masonry / Sass</p>
 						<a href="http://drumr.getforge.io/" target="_blank"><p className="ghost-button">Visit Website</p></a>
 						<a href="https://github.com/m2mathew/drumr-app-v2" target="_blank"><p className="ghost-button">View Code</p></a>
