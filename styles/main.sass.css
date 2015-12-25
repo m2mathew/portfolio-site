@@ -33,9 +33,9 @@ nav #menu .active a {
 
 .title {
   width: 100%;
-  margin-top: 5em;
-  margin-bottom: 2em;
-  padding: 1em auto;
+  margin-top: 4.5em;
+  margin-bottom: 0.5em;
+  padding: 0.5em auto;
   border-bottom: 6px solid gray; }
   .title h1 {
     font-family: "Open Sans", sans-serif;
@@ -55,9 +55,9 @@ nav #menu .active a {
 .about-box {
   max-width: 100%;
   width: 100%;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   padding: auto 1.5em;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   border-bottom: 6px solid gray; }
   .about-box h3 {
     font-family: "Open Sans", sans-serif;
@@ -82,7 +82,7 @@ nav #menu .active a {
   .work-box h1 {
     font-weight: 700;
     font-size: 24px;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     text-align: left; }
   .work-box .card {
     margin-bottom: 2em !important;

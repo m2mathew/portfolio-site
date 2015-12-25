@@ -48372,7 +48372,7 @@ module.exports = React.createClass({
 					React.createElement(
 						'p',
 						null,
-						'A way to find and keep track of your favorite drummers. This application was designed and built in a two-week period as a final project for The Iron Yard. It uses Masonry to organize the photos and React to load the information quicly.'
+						'A way to find and keep track of your favorite drummers. This application was designed and built in a two-week period as a final project for The Iron Yard. It uses Masonry to organize the photos and React to load the information quickly.'
 					),
 					React.createElement(
 						'p',
