@@ -148,8 +148,6 @@ nav #menu .active a {
       text-decoration: none; }
   .resume-box .well {
     background-color: #D4D8EF; }
-    .resume-box .well:hover, .resume-box .well:focus {
-      padding-left: 0.85em; }
   .resume-box .indent, .resume-box p {
     padding-left: 2em;
     padding-right: 2em;
