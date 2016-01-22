@@ -7,17 +7,17 @@ const WorkComponent = require('./WorkComponent');
 
 module.exports = React.createClass({
 
-	render () {
+  render () {
 
-		return (
-			<section className="home-box row col-sm-12">
-				<TitleComponent />
+    return (
+      <section className="home-box row col-sm-12">
+        <TitleComponent />
 
-				<AboutComponent />
+        <AboutComponent />
 
-				<WorkComponent />
+        <WorkComponent />
 
-			</section>
-		);
-	}
+      </section>
+    );
+  }
 });
