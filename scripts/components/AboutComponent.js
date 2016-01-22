@@ -1,5 +1,3 @@
-'use strict';
-
 const React = require('react');
 const Modal = require('react-bootstrap').Modal;
 
@@ -18,8 +16,7 @@ module.exports = React.createClass({
       $('#myInput').focus()
     });
   },
-  render () {
-
+  render() {
     return (
       <div className="container about-box">
         <div className="row text-justify">

@@ -1,5 +1,3 @@
-'use strict';
-
 const React = require('react');
 const Backbone = require('backbone');
 
@@ -19,8 +17,7 @@ module.exports = React.createClass({
       $('.dropdown-toggle').dropdown();
     })
   },
-  render () {
-
+  render() {
     let currentPage = Backbone.history.getFragment();
 
     let links = [

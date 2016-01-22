@@ -1,11 +1,8 @@
-'use strict';
-
 const React = require('react');
 
 module.exports = React.createClass({
 
-  render () {
-
+  render() {
     return (
       <div className="title">
         <h1 className="text-left">Mike Mathew</h1>

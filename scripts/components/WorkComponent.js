@@ -1,11 +1,8 @@
-'use strict';
-
 const React = require('react');
 
 module.exports = React.createClass({
 
-  render () {
-
+  render() {
     return (
       <div className="container work-box">
 

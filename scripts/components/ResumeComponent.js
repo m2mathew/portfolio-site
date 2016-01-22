@@ -1,12 +1,9 @@
-'use strict';
-
 const React = require('react');
 const TitleComponent = require('./TitleComponent');
 
 module.exports = React.createClass({
 
   render () {
-
     return (
       <section className="row resume-box col-sm-12">
         <TitleComponent />
