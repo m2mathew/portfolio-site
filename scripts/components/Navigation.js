@@ -4,26 +4,29 @@ const Backbone = require('backbone');
 
 
 // Component Definition
-module.exports = React.createClass({
+class Navigation extends React.Component {
   getInitialState() {
     return {
       links: []
     };
-  },
+  }
+
   componentWillMount() {
     this.props.router.on('route', () => {
         this.forceUpdate();
     });
-  },
+  }
+
   componentDidMount() {
     $(document).ready(function(){
       $('.dropdown-toggle').dropdown();
     })
-  },
-  render() {
-    let currentPage = Backbone.history.getFragment();
+  }
 
-    let links = [
+  render() {
+    const currentPage = Backbone.history.getFragment();
+
+    const links = [
       <li key="home" className={currentPage === '' ? 'active nav-link' : 'nav-link'}><a href="#">home</a></li>,
       <li key="resume" className={currentPage === 'resume' ? 'active nav-link' : 'nav-link'}><a href="#resume">resume</a></li>
     ];
@@ -48,4 +51,6 @@ module.exports = React.createClass({
       </div>
     );
   }
-});
+}
+
+export default Navigation;

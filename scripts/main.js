@@ -11,28 +11,28 @@ const Resume = require('./components/Resume');
 window.$ = require('jquery');
 window.jQuery = $;
 
-let app = document.getElementById('app');
-let nav = document.getElementById('nav');
+const app = document.getElementById('app');
+const nav = document.getElementById('nav');
 
 // Backbone router
-let Router = Backbone.Router.extend({
+const Router = Backbone.Router.extend({
 	routes: {
 		'': 'home',
 		'resume': 'resume'
 	},
-	home: function() {
+	home() {
 		ReactDOM.render(
 			<Home />, app
 		);
 	},
-	resume: function() {
+	resume() {
 		ReactDOM.render(
 			<Resume />, app
 		);
 	}
 });
 
-let r = new Router;
+const r = new Router;
 Backbone.history.start();
 
 // Render the app to the DOM

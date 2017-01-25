@@ -4,21 +4,25 @@ const Modal = require('react-bootstrap').Modal;
 
 
 // Component Definition
-module.exports = React.createClass({
+class About extends React.Component {
   getInitialState() {
      return { showModal: false };
-  },
+  }
+
   close() {
     this.setState({ showModal: false });
-  },
+  }
+
   open() {
     this.setState({ showModal: true });
-  },
+  }
+
   componentWillMount() {
     $('#myModal').on('shown.bs.modal', () => {
       $('#myInput').focus()
     });
-  },
+  }
+
   render() {
     return (
       <div className="container about-box">
@@ -139,4 +143,6 @@ module.exports = React.createClass({
       </div>
     );
   }
-});
+}
+
+export default About;

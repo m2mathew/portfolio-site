@@ -49468,364 +49468,402 @@ module.exports = warning;
 // External
 'use strict';
 
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 var React = require('react');
 var Modal = require('react-bootstrap').Modal;
 
 // Component Definition
-module.exports = React.createClass({
-  displayName: 'exports',
 
-  getInitialState: function getInitialState() {
-    return { showModal: false };
-  },
-  close: function close() {
-    this.setState({ showModal: false });
-  },
-  open: function open() {
-    this.setState({ showModal: true });
-  },
-  componentWillMount: function componentWillMount() {
-    $('#myModal').on('shown.bs.modal', function () {
-      $('#myInput').focus();
-    });
-  },
-  render: function render() {
-    return React.createElement(
-      'div',
-      { className: 'container about-box' },
-      React.createElement(
-        'div',
-        { className: 'row text-justify' },
-        React.createElement(
-          'strong',
-          null,
-          'HOW TO MAKE A FRONT END DEVELOPER NAMED MIKE '
-        ),
-        React.createElement(
-          'span',
-          null,
-          '• FALL IN LOVE WITH LEARNING '
-        ),
-        React.createElement(
-          'span',
-          null,
-          '• GET A TRS-80 FROM UNCLE RICKY AND LEARN TO PROGRAM IN BASIC '
-        ),
-        React.createElement(
-          'span',
-          null,
-          '• START HITTING THINGS WITH DRUMSTICKS '
-        ),
-        React.createElement(
-          'span',
-          null,
-          '• PLAY LOTS OF VIDEO GAMES '
-        ),
-        React.createElement(
-          'span',
-          null,
-          '• TAKE TWO YEARS OF COMPUTER SCIENCE IN HIGH SCHOOL USING C++ AND TURBO PASCAL '
-        ),
-        React.createElement(
-          'span',
-          null,
-          '• SIT NEXT TO FUTURE WIFE IN COMPUTER SCIENCE '
-        ),
-        React.createElement(
-          'span',
-          null,
-          '• MAJOR IN MUSIC EDUCATION IN COLLEGE '
-        ),
-        React.createElement(
-          'span',
-          null,
-          '• ',
-          React.createElement(
-            'a',
-            { 'data-toggle': 'modal', href: '#dci', className: 'text-callout' },
-            'TOUR AND PERFORM WITH A DRUM AND BUGLE CORPS'
-          ),
-          React.createElement(
-            'div',
-            { className: 'modal fade', id: 'dci', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel', 'aria-hidden': 'true' },
-            React.createElement(
-              'div',
-              { className: 'modal-dialog modal-lg' },
-              React.createElement(
-                'div',
-                { className: 'modal-content' },
-                React.createElement(
-                  'div',
-                  null,
-                  React.createElement(
-                    'button',
-                    { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-hidden': 'true' },
-                    '×'
-                  )
-                ),
-                React.createElement(
-                  'div',
-                  { className: 'modal-body' },
-                  React.createElement('img', { className: 'modal-pic', src: '../../images/drum-corps-crown-2000.jpeg', alt: 'Mike on tour with Carolina Crown 2000' })
-                ),
-                React.createElement(
-                  'h4',
-                  { className: 'modal-title' },
-                  'I marched with the Troopers in 1996 and Carolina Crown in 2000 (pictured, far right), both playing quads in the drum line. This experience is unlike anything else. We traveled on charter buses for a summer and stayed in high schools in each city. It is kind of like the army meets marching band. '
-                )
-              )
-            )
-          )
-        ),
-        React.createElement(
-          'span',
-          null,
-          ' • SPEND EQUAL TIME WRITING MUSIC ON A COMPUTER AS PERFORMING IT '
-        ),
-        React.createElement(
-          'span',
-          null,
-          '• ',
-          React.createElement(
-            'a',
-            { 'data-toggle': 'modal', href: '#wedding', className: 'text-callout' },
-            'GET MARRIED TO YOUR HIGH SCHOOL SWEETHEART'
-          ),
-          React.createElement(
-            'div',
-            { className: 'modal fade', id: 'wedding', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel', 'aria-hidden': 'true' },
-            React.createElement(
-              'div',
-              { className: 'modal-dialog modal-lg' },
-              React.createElement(
-                'div',
-                { className: 'modal-content' },
-                React.createElement(
-                  'div',
-                  null,
-                  React.createElement(
-                    'button',
-                    { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-hidden': 'true' },
-                    '×'
-                  )
-                ),
-                React.createElement(
-                  'div',
-                  { className: 'modal-body' },
-                  React.createElement('img', { className: 'modal-pic', src: '../../images/michael-and-melissa.jpg', alt: 'Michael and Melissa heading to the reception' })
-                ),
-                React.createElement(
-                  'h4',
-                  { className: 'modal-title' },
-                  'Melissa and I were married in December 2000 after dating since high school! Still going strong with a great family!'
-                )
-              )
-            )
-          )
-        ),
-        React.createElement(
-          'span',
-          null,
-          ' • GRADUATE COLLEGE AND TEACH MUSIC FOR OVER A DECADE '
-        ),
-        React.createElement(
-          'span',
-          null,
-          '• ',
-          React.createElement(
-            'a',
-            { 'data-toggle': 'modal', href: '#trinity', className: 'text-callout' },
-            'CONVINCE STUDENTS TO WORK HARD ENOUGH TO WIN AN INTERNATIONAL COMPETITION'
-          ),
-          React.createElement(
-            'div',
-            { className: 'modal fade', id: 'trinity', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel', 'aria-hidden': 'true' },
-            React.createElement(
-              'div',
-              { className: 'modal-dialog modal-lg' },
-              React.createElement(
-                'div',
-                { className: 'modal-content' },
-                React.createElement(
-                  'div',
-                  null,
-                  React.createElement(
-                    'button',
-                    { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-hidden': 'true' },
-                    '×'
-                  )
-                ),
-                React.createElement(
-                  'div',
-                  { className: 'modal-body' },
-                  React.createElement('img', { className: 'modal-pic', src: '../../images/trinity.jpg', alt: 'The entrance to The Iron Yard-Austin campus' })
-                ),
-                React.createElement(
-                  'h4',
-                  { className: 'modal-title' },
-                  'As winners of the International Percussion Ensemble Contest, my students at Trinity High School were invited to perform at the 2006 Percussive Arts Society International Convention in Austin, Texas. I commissioned a new work for percussion ensemble from composer Dwayne Rice that we premiered at this concert. The students played great, and we had a blast!'
-                )
-              )
-            )
-          )
-        ),
-        React.createElement(
-          'span',
-          null,
-          ' • MAKE WEBSITES FOR YOUR BAND PROGRAMS '
-        ),
-        React.createElement(
-          'span',
-          null,
-          '• ',
-          React.createElement(
-            'a',
-            { 'data-toggle': 'modal', href: '#kids', className: 'text-callout' },
-            'HAVE THREE KIDS ALONG THE WAY'
-          ),
-          React.createElement(
-            'div',
-            { className: 'modal fade', id: 'kids', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel', 'aria-hidden': 'true' },
-            React.createElement(
-              'div',
-              { className: 'modal-dialog modal-lg' },
-              React.createElement(
-                'div',
-                { className: 'modal-content' },
-                React.createElement(
-                  'div',
-                  null,
-                  React.createElement(
-                    'button',
-                    { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-hidden': 'true' },
-                    '×'
-                  )
-                ),
-                React.createElement(
-                  'div',
-                  { className: 'modal-body' },
-                  React.createElement('img', { className: 'modal-pic', src: '../../images/kids.jpg', alt: 'The entrance to The Iron Yard-Austin campus' })
-                ),
-                React.createElement(
-                  'h4',
-                  { className: 'modal-title' },
-                  'Isaac (b.2002), Alexis (b.2005), and Olivia (b.2012) are enjoying beautiful downtown Dallas around Thanksgiving 2015. Far right is my brother Stephen (b.1998)'
-                )
-              )
-            )
-          )
-        ),
-        React.createElement(
-          'span',
-          null,
-          ' • REALIZE THAT YOU SPEND AS MUCH TIME FORMATTING AN EMAIL AS TEACHING '
-        ),
-        React.createElement(
-          'span',
-          null,
-          '• ',
-          React.createElement(
-            'a',
-            { 'data-toggle': 'modal', href: '#bro', className: 'text-callout' },
-            'BECOME THE GUARDIAN FOR YOUR LITTLE BROTHER'
-          ),
-          React.createElement(
-            'div',
-            { className: 'modal fade', id: 'bro', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel', 'aria-hidden': 'true' },
-            React.createElement(
-              'div',
-              { className: 'modal-dialog modal-lg' },
-              React.createElement(
-                'div',
-                { className: 'modal-content' },
-                React.createElement(
-                  'div',
-                  null,
-                  React.createElement(
-                    'button',
-                    { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-hidden': 'true' },
-                    '×'
-                  )
-                ),
-                React.createElement(
-                  'div',
-                  { className: 'modal-body' },
-                  React.createElement('img', { className: 'modal-pic', src: '../../images/stephen-and-mike.jpg', alt: 'Mike with his little brother Stephen' })
-                ),
-                React.createElement(
-                  'h4',
-                  { className: 'modal-title' },
-                  'Stephen and I were hanging around at the Top of the Rock in Manhattan, NYC in May 2015.'
-                )
-              )
-            )
-          )
-        ),
-        React.createElement(
-          'span',
-          null,
-          ' • START LEARNING MORE CODE '
-        ),
-        React.createElement(
-          'span',
-          null,
-          '• SWITCH GEARS FROM BEING A BAND DIRECTOR TO A WEB DEVELOPER '
-        ),
-        React.createElement(
-          'span',
-          null,
-          '• ',
-          React.createElement(
-            'a',
-            { 'data-toggle': 'modal', href: '#tiy', className: 'text-callout' },
-            'ENROLL AT A CODE SCHOOL THREE HOURS FROM HOME'
-          ),
-          React.createElement(
-            'div',
-            { className: 'modal fade', id: 'tiy', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel', 'aria-hidden': 'true' },
-            React.createElement(
-              'div',
-              { className: 'modal-dialog modal-lg' },
-              React.createElement(
-                'div',
-                { className: 'modal-content' },
-                React.createElement(
-                  'div',
-                  null,
-                  React.createElement(
-                    'button',
-                    { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-hidden': 'true' },
-                    '×'
-                  )
-                ),
-                React.createElement(
-                  'div',
-                  { className: 'modal-body' },
-                  React.createElement('img', { className: 'modal-pic', src: '../../images/iron-yard-austin.jpg', alt: 'The entrance to The Iron Yard-Austin campus' })
-                ),
-                React.createElement(
-                  'h4',
-                  { className: 'modal-title' },
-                  'My time in code school at The Iron Yard-Austin was an immersive dive into front end coding and development. My instructor Aaron Larner always gave us the nudge we needed to solve problems ourselves. We also used Agile methodology for three projects and built applications on teams  with back end and design students. '
-                )
-              )
-            )
-          )
-        ),
-        React.createElement(
-          'span',
-          null,
-          ' • KEEP LEARNING AND MAKING AWESOME THINGS.'
-        )
-      )
-    );
+var About = (function (_React$Component) {
+  _inherits(About, _React$Component);
+
+  function About() {
+    _classCallCheck(this, About);
+
+    _get(Object.getPrototypeOf(About.prototype), 'constructor', this).apply(this, arguments);
   }
-});
+
+  _createClass(About, [{
+    key: 'getInitialState',
+    value: function getInitialState() {
+      return { showModal: false };
+    }
+  }, {
+    key: 'close',
+    value: function close() {
+      this.setState({ showModal: false });
+    }
+  }, {
+    key: 'open',
+    value: function open() {
+      this.setState({ showModal: true });
+    }
+  }, {
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus();
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return React.createElement(
+        'div',
+        { className: 'container about-box' },
+        React.createElement(
+          'div',
+          { className: 'row text-justify' },
+          React.createElement(
+            'strong',
+            null,
+            'HOW TO MAKE A FRONT END DEVELOPER NAMED MIKE '
+          ),
+          React.createElement(
+            'span',
+            null,
+            '• FALL IN LOVE WITH LEARNING '
+          ),
+          React.createElement(
+            'span',
+            null,
+            '• GET A TRS-80 FROM UNCLE RICKY AND LEARN TO PROGRAM IN BASIC '
+          ),
+          React.createElement(
+            'span',
+            null,
+            '• START HITTING THINGS WITH DRUMSTICKS '
+          ),
+          React.createElement(
+            'span',
+            null,
+            '• PLAY LOTS OF VIDEO GAMES '
+          ),
+          React.createElement(
+            'span',
+            null,
+            '• TAKE TWO YEARS OF COMPUTER SCIENCE IN HIGH SCHOOL USING C++ AND TURBO PASCAL '
+          ),
+          React.createElement(
+            'span',
+            null,
+            '• SIT NEXT TO FUTURE WIFE IN COMPUTER SCIENCE '
+          ),
+          React.createElement(
+            'span',
+            null,
+            '• MAJOR IN MUSIC EDUCATION IN COLLEGE '
+          ),
+          React.createElement(
+            'span',
+            null,
+            '• ',
+            React.createElement(
+              'a',
+              { 'data-toggle': 'modal', href: '#dci', className: 'text-callout' },
+              'TOUR AND PERFORM WITH A DRUM AND BUGLE CORPS'
+            ),
+            React.createElement(
+              'div',
+              { className: 'modal fade', id: 'dci', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel', 'aria-hidden': 'true' },
+              React.createElement(
+                'div',
+                { className: 'modal-dialog modal-lg' },
+                React.createElement(
+                  'div',
+                  { className: 'modal-content' },
+                  React.createElement(
+                    'div',
+                    null,
+                    React.createElement(
+                      'button',
+                      { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-hidden': 'true' },
+                      '×'
+                    )
+                  ),
+                  React.createElement(
+                    'div',
+                    { className: 'modal-body' },
+                    React.createElement('img', { className: 'modal-pic', src: '../../images/drum-corps-crown-2000.jpeg', alt: 'Mike on tour with Carolina Crown 2000' })
+                  ),
+                  React.createElement(
+                    'h4',
+                    { className: 'modal-title' },
+                    'I marched with the Troopers in 1996 and Carolina Crown in 2000 (pictured, far right), both playing quads in the drum line. This experience is unlike anything else. We traveled on charter buses for a summer and stayed in high schools in each city. It is kind of like the army meets marching band. '
+                  )
+                )
+              )
+            )
+          ),
+          React.createElement(
+            'span',
+            null,
+            ' • SPEND EQUAL TIME WRITING MUSIC ON A COMPUTER AS PERFORMING IT '
+          ),
+          React.createElement(
+            'span',
+            null,
+            '• ',
+            React.createElement(
+              'a',
+              { 'data-toggle': 'modal', href: '#wedding', className: 'text-callout' },
+              'GET MARRIED TO YOUR HIGH SCHOOL SWEETHEART'
+            ),
+            React.createElement(
+              'div',
+              { className: 'modal fade', id: 'wedding', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel', 'aria-hidden': 'true' },
+              React.createElement(
+                'div',
+                { className: 'modal-dialog modal-lg' },
+                React.createElement(
+                  'div',
+                  { className: 'modal-content' },
+                  React.createElement(
+                    'div',
+                    null,
+                    React.createElement(
+                      'button',
+                      { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-hidden': 'true' },
+                      '×'
+                    )
+                  ),
+                  React.createElement(
+                    'div',
+                    { className: 'modal-body' },
+                    React.createElement('img', { className: 'modal-pic', src: '../../images/michael-and-melissa.jpg', alt: 'Michael and Melissa heading to the reception' })
+                  ),
+                  React.createElement(
+                    'h4',
+                    { className: 'modal-title' },
+                    'Melissa and I were married in December 2000 after dating since high school! Still going strong with a great family!'
+                  )
+                )
+              )
+            )
+          ),
+          React.createElement(
+            'span',
+            null,
+            ' • GRADUATE COLLEGE AND TEACH MUSIC FOR OVER A DECADE '
+          ),
+          React.createElement(
+            'span',
+            null,
+            '• ',
+            React.createElement(
+              'a',
+              { 'data-toggle': 'modal', href: '#trinity', className: 'text-callout' },
+              'CONVINCE STUDENTS TO WORK HARD ENOUGH TO WIN AN INTERNATIONAL COMPETITION'
+            ),
+            React.createElement(
+              'div',
+              { className: 'modal fade', id: 'trinity', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel', 'aria-hidden': 'true' },
+              React.createElement(
+                'div',
+                { className: 'modal-dialog modal-lg' },
+                React.createElement(
+                  'div',
+                  { className: 'modal-content' },
+                  React.createElement(
+                    'div',
+                    null,
+                    React.createElement(
+                      'button',
+                      { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-hidden': 'true' },
+                      '×'
+                    )
+                  ),
+                  React.createElement(
+                    'div',
+                    { className: 'modal-body' },
+                    React.createElement('img', { className: 'modal-pic', src: '../../images/trinity.jpg', alt: 'The entrance to The Iron Yard-Austin campus' })
+                  ),
+                  React.createElement(
+                    'h4',
+                    { className: 'modal-title' },
+                    'As winners of the International Percussion Ensemble Contest, my students at Trinity High School were invited to perform at the 2006 Percussive Arts Society International Convention in Austin, Texas. I commissioned a new work for percussion ensemble from composer Dwayne Rice that we premiered at this concert. The students played great, and we had a blast!'
+                  )
+                )
+              )
+            )
+          ),
+          React.createElement(
+            'span',
+            null,
+            ' • MAKE WEBSITES FOR YOUR BAND PROGRAMS '
+          ),
+          React.createElement(
+            'span',
+            null,
+            '• ',
+            React.createElement(
+              'a',
+              { 'data-toggle': 'modal', href: '#kids', className: 'text-callout' },
+              'HAVE THREE KIDS ALONG THE WAY'
+            ),
+            React.createElement(
+              'div',
+              { className: 'modal fade', id: 'kids', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel', 'aria-hidden': 'true' },
+              React.createElement(
+                'div',
+                { className: 'modal-dialog modal-lg' },
+                React.createElement(
+                  'div',
+                  { className: 'modal-content' },
+                  React.createElement(
+                    'div',
+                    null,
+                    React.createElement(
+                      'button',
+                      { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-hidden': 'true' },
+                      '×'
+                    )
+                  ),
+                  React.createElement(
+                    'div',
+                    { className: 'modal-body' },
+                    React.createElement('img', { className: 'modal-pic', src: '../../images/kids.jpg', alt: 'The entrance to The Iron Yard-Austin campus' })
+                  ),
+                  React.createElement(
+                    'h4',
+                    { className: 'modal-title' },
+                    'Isaac (b.2002), Alexis (b.2005), and Olivia (b.2012) are enjoying beautiful downtown Dallas around Thanksgiving 2015. Far right is my brother Stephen (b.1998)'
+                  )
+                )
+              )
+            )
+          ),
+          React.createElement(
+            'span',
+            null,
+            ' • REALIZE THAT YOU SPEND AS MUCH TIME FORMATTING AN EMAIL AS TEACHING '
+          ),
+          React.createElement(
+            'span',
+            null,
+            '• ',
+            React.createElement(
+              'a',
+              { 'data-toggle': 'modal', href: '#bro', className: 'text-callout' },
+              'BECOME THE GUARDIAN FOR YOUR LITTLE BROTHER'
+            ),
+            React.createElement(
+              'div',
+              { className: 'modal fade', id: 'bro', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel', 'aria-hidden': 'true' },
+              React.createElement(
+                'div',
+                { className: 'modal-dialog modal-lg' },
+                React.createElement(
+                  'div',
+                  { className: 'modal-content' },
+                  React.createElement(
+                    'div',
+                    null,
+                    React.createElement(
+                      'button',
+                      { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-hidden': 'true' },
+                      '×'
+                    )
+                  ),
+                  React.createElement(
+                    'div',
+                    { className: 'modal-body' },
+                    React.createElement('img', { className: 'modal-pic', src: '../../images/stephen-and-mike.jpg', alt: 'Mike with his little brother Stephen' })
+                  ),
+                  React.createElement(
+                    'h4',
+                    { className: 'modal-title' },
+                    'Stephen and I were hanging around at the Top of the Rock in Manhattan, NYC in May 2015.'
+                  )
+                )
+              )
+            )
+          ),
+          React.createElement(
+            'span',
+            null,
+            ' • START LEARNING MORE CODE '
+          ),
+          React.createElement(
+            'span',
+            null,
+            '• SWITCH GEARS FROM BEING A BAND DIRECTOR TO A WEB DEVELOPER '
+          ),
+          React.createElement(
+            'span',
+            null,
+            '• ',
+            React.createElement(
+              'a',
+              { 'data-toggle': 'modal', href: '#tiy', className: 'text-callout' },
+              'ENROLL AT A CODE SCHOOL THREE HOURS FROM HOME'
+            ),
+            React.createElement(
+              'div',
+              { className: 'modal fade', id: 'tiy', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel', 'aria-hidden': 'true' },
+              React.createElement(
+                'div',
+                { className: 'modal-dialog modal-lg' },
+                React.createElement(
+                  'div',
+                  { className: 'modal-content' },
+                  React.createElement(
+                    'div',
+                    null,
+                    React.createElement(
+                      'button',
+                      { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-hidden': 'true' },
+                      '×'
+                    )
+                  ),
+                  React.createElement(
+                    'div',
+                    { className: 'modal-body' },
+                    React.createElement('img', { className: 'modal-pic', src: '../../images/iron-yard-austin.jpg', alt: 'The entrance to The Iron Yard-Austin campus' })
+                  ),
+                  React.createElement(
+                    'h4',
+                    { className: 'modal-title' },
+                    'My time in code school at The Iron Yard-Austin was an immersive dive into front end coding and development. My instructor Aaron Larner always gave us the nudge we needed to solve problems ourselves. We also used Agile methodology for three projects and built applications on teams  with back end and design students. '
+                  )
+                )
+              )
+            )
+          ),
+          React.createElement(
+            'span',
+            null,
+            ' • KEEP LEARNING AND MAKING AWESOME THINGS.'
+          )
+        )
+      );
+    }
+  }]);
+
+  return About;
+})(React.Component);
+
+exports['default'] = About;
+module.exports = exports['default'];
 
 },{"react":409,"react-bootstrap":245}],416:[function(require,module,exports){
 // External
 'use strict';
 
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
 var React = require('react');
 
 // Internal
@@ -49834,595 +49872,633 @@ var About = require('./About');
 var Work = require('./Work');
 
 // Component Definition
-module.exports = React.createClass({
-  displayName: 'exports',
+var Home = function Home() {
+  return React.createElement(
+    'section',
+    { className: 'home-box row col-sm-12' },
+    React.createElement(Title, null),
+    React.createElement(About, null),
+    React.createElement(Work, null)
+  );
+};
 
-  render: function render() {
-    return React.createElement(
-      'section',
-      { className: 'home-box row col-sm-12' },
-      React.createElement(Title, null),
-      React.createElement(About, null),
-      React.createElement(Work, null)
-    );
-  }
-});
+exports['default'] = Home;
+module.exports = exports['default'];
 
 },{"./About":415,"./Title":419,"./Work":420,"react":409}],417:[function(require,module,exports){
 // External
 'use strict';
 
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 var React = require('react');
 var Backbone = require('backbone');
 
 // Component Definition
-module.exports = React.createClass({
-  displayName: 'exports',
 
-  getInitialState: function getInitialState() {
-    return {
-      links: []
-    };
-  },
-  componentWillMount: function componentWillMount() {
-    var _this = this;
+var Navigation = (function (_React$Component) {
+  _inherits(Navigation, _React$Component);
 
-    this.props.router.on('route', function () {
-      _this.forceUpdate();
-    });
-  },
-  componentDidMount: function componentDidMount() {
-    $(document).ready(function () {
-      $('.dropdown-toggle').dropdown();
-    });
-  },
-  render: function render() {
-    var currentPage = Backbone.history.getFragment();
+  function Navigation() {
+    _classCallCheck(this, Navigation);
 
-    var links = [React.createElement(
-      'li',
-      { key: 'home', className: currentPage === '' ? 'active nav-link' : 'nav-link' },
-      React.createElement(
-        'a',
-        { href: '#' },
-        'home'
-      )
-    ), React.createElement(
-      'li',
-      { key: 'resume', className: currentPage === 'resume' ? 'active nav-link' : 'nav-link' },
-      React.createElement(
-        'a',
-        { href: '#resume' },
-        'resume'
-      )
-    )];
-
-    return React.createElement(
-      'div',
-      { className: 'container-fluid' },
-      React.createElement(
-        'div',
-        { className: 'navbar-header' },
-        React.createElement(
-          'button',
-          { type: 'button', className: 'navbar-toggle collapsed', 'data-toggle': 'collapse', 'data-target': '#bs-example-navbar-collapse-1', 'aria-expanded': 'false' },
-          React.createElement(
-            'span',
-            { className: 'sr-only' },
-            'Toggle navigation'
-          ),
-          React.createElement('span', { className: 'icon-bar' }),
-          React.createElement('span', { className: 'icon-bar' }),
-          React.createElement('span', { className: 'icon-bar' })
-        )
-      ),
-      React.createElement(
-        'div',
-        { className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' },
-        React.createElement(
-          'ul',
-          { className: 'nav navbar-nav navbar-left', id: 'menu' },
-          links
-        )
-      )
-    );
+    _get(Object.getPrototypeOf(Navigation.prototype), 'constructor', this).apply(this, arguments);
   }
-});
+
+  _createClass(Navigation, [{
+    key: 'getInitialState',
+    value: function getInitialState() {
+      return {
+        links: []
+      };
+    }
+  }, {
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      var _this = this;
+
+      this.props.router.on('route', function () {
+        _this.forceUpdate();
+      });
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      $(document).ready(function () {
+        $('.dropdown-toggle').dropdown();
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var currentPage = Backbone.history.getFragment();
+
+      var links = [React.createElement(
+        'li',
+        { key: 'home', className: currentPage === '' ? 'active nav-link' : 'nav-link' },
+        React.createElement(
+          'a',
+          { href: '#' },
+          'home'
+        )
+      ), React.createElement(
+        'li',
+        { key: 'resume', className: currentPage === 'resume' ? 'active nav-link' : 'nav-link' },
+        React.createElement(
+          'a',
+          { href: '#resume' },
+          'resume'
+        )
+      )];
+
+      return React.createElement(
+        'div',
+        { className: 'container-fluid' },
+        React.createElement(
+          'div',
+          { className: 'navbar-header' },
+          React.createElement(
+            'button',
+            { type: 'button', className: 'navbar-toggle collapsed', 'data-toggle': 'collapse', 'data-target': '#bs-example-navbar-collapse-1', 'aria-expanded': 'false' },
+            React.createElement(
+              'span',
+              { className: 'sr-only' },
+              'Toggle navigation'
+            ),
+            React.createElement('span', { className: 'icon-bar' }),
+            React.createElement('span', { className: 'icon-bar' }),
+            React.createElement('span', { className: 'icon-bar' })
+          )
+        ),
+        React.createElement(
+          'div',
+          { className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' },
+          React.createElement(
+            'ul',
+            { className: 'nav navbar-nav navbar-left', id: 'menu' },
+            links
+          )
+        )
+      );
+    }
+  }]);
+
+  return Navigation;
+})(React.Component);
+
+exports['default'] = Navigation;
+module.exports = exports['default'];
 
 },{"backbone":11,"react":409}],418:[function(require,module,exports){
 // External
 'use strict';
 
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
 var React = require('react');
 
 // Internal
 var Title = require('./Title');
 
 // Component Definition
-module.exports = React.createClass({
-  displayName: 'exports',
-
-  render: function render() {
-    return React.createElement(
-      'section',
-      { className: 'row resume-box col-sm-12' },
-      React.createElement(Title, null),
+var Resume = function Resume() {
+  return React.createElement(
+    'section',
+    { className: 'row resume-box col-sm-12' },
+    React.createElement(Title, null),
+    React.createElement(
+      'div',
+      { className: 'row' },
       React.createElement(
-        'div',
-        { className: 'row' },
-        React.createElement(
-          'h3',
-          { className: 'well' },
-          'Summary'
-        ),
-        React.createElement(
-          'div',
-          { className: 'body-text' },
-          React.createElement(
-            'p',
-            null,
-            'My journey has taken me from leading young people and teaching bands and drum lines around Texas to making websites and web applications for everyone. As I continue to grow as a developer, I would love to work alongside a collaborative team that values education and community.'
-          ),
-          React.createElement(
-            'p',
-            null,
-            'In my previous positions, I was able to practice daily public speaking and leading groups of all sizes through a variety of projects. I remain excited about education and hope to use my influence to make my community a better place each day.'
-          )
-        )
+        'h3',
+        { className: 'well' },
+        'Summary'
       ),
       React.createElement(
         'div',
-        { className: 'row' },
-        React.createElement(
-          'h3',
-          { className: 'well' },
-          'Specialties\u2028'
-        ),
-        React.createElement(
-          'div',
-          { className: 'body-text' },
-          React.createElement(
-            'p',
-            null,
-            React.createElement(
-              'strong',
-              null,
-              'Skills and Languages:'
-            )
-          ),
-          React.createElement(
-            'p',
-            { className: 'indent' },
-            'JavaScript, HTML5, CSS3, DOM, jQuery, React, Backbone, Web Applications, Web Development'
-          ),
-          React.createElement(
-            'p',
-            null,
-            React.createElement(
-              'strong',
-              null,
-              'Computer & Operating Systems:'
-            )
-          ),
-          React.createElement(
-            'p',
-            { className: 'indent' },
-            'Mac OS X,  iWork suite (Pages, Numbers, Keynote), MS Office (Word, Excel, PowerPoint), Sublime Text 3'
-          )
-        )
-      ),
-      React.createElement(
-        'div',
-        { className: 'row' },
-        React.createElement(
-          'h3',
-          { className: 'well' },
-          'Experience'
-        ),
-        React.createElement(
-          'div',
-          { className: 'body-text' },
-          React.createElement(
-            'p',
-            null,
-            React.createElement(
-              'strong',
-              null,
-              'Call-Em-all'
-            ),
-            ' - Frisco, Texas'
-          ),
-          React.createElement(
-            'p',
-            { className: 'indent' },
-            'Front End Developer (started December 2015)'
-          ),
-          React.createElement(
-            'p',
-            { className: 'indent' },
-            'Primarily work on engineering team to develop the next iteration of the desktop client application. Help solve customer support issues that arise on the personal and technical levels. Primarily using React.js and node.js. All team members work to contribute to the entire customer experience.'
-          )
-        )
-      ),
-      React.createElement(
-        'div',
-        { className: 'row' },
-        React.createElement(
-          'h3',
-          { className: 'well' },
-          'Education'
-        ),
-        React.createElement(
-          'div',
-          { className: 'body-text' },
-          React.createElement(
-            'p',
-            null,
-            React.createElement(
-              'strong',
-              null,
-              'The Iron Yard'
-            ),
-            ' - Austin, Texas'
-          ),
-          React.createElement(
-            'p',
-            { className: 'indent' },
-            'Front End Engineering Certification (November 2015)'
-          ),
-          React.createElement(
-            'p',
-            null,
-            React.createElement(
-              'strong',
-              null,
-              'Texas A&M University-Commerce'
-            ),
-            ' - Commerce, Texas\u2028'
-          ),
-          React.createElement(
-            'p',
-            { className: 'indent' },
-            'Candidate for Master of Music Education (Summer 2016)\u2028'
-          ),
-          React.createElement(
-            'p',
-            { className: 'indent' },
-            'Bachelor of Science in Music Education (May 2002)'
-          )
-        )
-      ),
-      React.createElement(
-        'div',
-        { className: 'row' },
-        React.createElement(
-          'h3',
-          { className: 'well' },
-          'Personal Projects '
-        ),
-        React.createElement(
-          'div',
-          { className: 'body-text' },
-          React.createElement(
-            'p',
-            null,
-            React.createElement(
-              'strong',
-              null,
-              React.createElement(
-                'a',
-                { href: 'http://www.drumsensei.com/' },
-                'Drumsensei.com'
-              )
-            )
-          ),
-          React.createElement(
-            'p',
-            { className: 'indent' },
-            'Personal blog site launched in June 2015.'
-          ),
-          React.createElement(
-            'p',
-            null,
-            React.createElement(
-              'strong',
-              null,
-              React.createElement(
-                'a',
-                { href: 'http://drumr.getforge.io/' },
-                'Drumr'
-              )
-            )
-          ),
-          React.createElement(
-            'p',
-            { className: 'indent' },
-            'Written using React, Parse, and Masonry, this app provides a searchable database for users to find drummers, add new drummers, or add existing drummers to a favorites list.'
-          ),
-          React.createElement(
-            'p',
-            null,
-            React.createElement(
-              'strong',
-              null,
-              'The Mathew Group'
-            )
-          ),
-          React.createElement(
-            'p',
-            { className: 'indent' },
-            'From 2005 to 2014, I designed and implemented websites for local high school band programs using Rapidweaver and basic HTML and CSS.'
-          )
-        )
-      ),
-      React.createElement(
-        'div',
-        { className: 'row' },
-        React.createElement(
-          'h3',
-          { className: 'well' },
-          'Group Projects '
-        ),
-        React.createElement(
-          'div',
-          { className: 'body-text' },
-          React.createElement(
-            'p',
-            null,
-            React.createElement(
-              'strong',
-              null,
-              React.createElement(
-                'a',
-                { href: 'http://tiy-austin-front-end-engineering.github.io/' },
-                'Iron Quizzes'
-              )
-            )
-          ),
-          React.createElement(
-            'p',
-            { className: 'indent' },
-            'Working with 16 developers using React, Parse, and Skeleton, this app lets teachers login to create/edit tests and view multiple kinds of analytics. Students can also login and take tests assigned to their specific class.'
-          ),
-          React.createElement(
-            'p',
-            null,
-            React.createElement(
-              'strong',
-              null,
-              React.createElement(
-                'a',
-                { href: 'http://m2mathew.github.io/' },
-                'Find a Spot'
-              )
-            )
-          ),
-          React.createElement(
-            'p',
-            { className: 'indent' },
-            'Constructed with 2 front-end developers, 1 back-end developer, and 1 designer, this app uses Backbone and jQuery to let a logged-in user find an open parking spot at a selection of Austin restaurants. This was conceived, designed, and deployed in three days.\u2028'
-          )
-        )
-      ),
-      React.createElement(
-        'a',
-        { href: '../../assets/Resume-Michael_Mathew.pdf', target: '_blank' },
+        { className: 'body-text' },
         React.createElement(
           'p',
-          { className: 'ghost-button' },
-          'Get the .pdf'
+          null,
+          'My journey has taken me from leading young people and teaching bands and drum lines around Texas to making websites and web applications for everyone. As I continue to grow as a developer, I would love to work alongside a collaborative team that values education and community.'
+        ),
+        React.createElement(
+          'p',
+          null,
+          'In my previous positions, I was able to practice daily public speaking and leading groups of all sizes through a variety of projects. I remain excited about education and hope to use my influence to make my community a better place each day.'
         )
       )
-    );
-  }
-});
+    ),
+    React.createElement(
+      'div',
+      { className: 'row' },
+      React.createElement(
+        'h3',
+        { className: 'well' },
+        'Specialties\u2028'
+      ),
+      React.createElement(
+        'div',
+        { className: 'body-text' },
+        React.createElement(
+          'p',
+          null,
+          React.createElement(
+            'strong',
+            null,
+            'Skills and Languages:'
+          )
+        ),
+        React.createElement(
+          'p',
+          { className: 'indent' },
+          'JavaScript, HTML5, CSS3, DOM, jQuery, React, Backbone, Web Applications, Web Development'
+        ),
+        React.createElement(
+          'p',
+          null,
+          React.createElement(
+            'strong',
+            null,
+            'Computer & Operating Systems:'
+          )
+        ),
+        React.createElement(
+          'p',
+          { className: 'indent' },
+          'Mac OS X,  iWork suite (Pages, Numbers, Keynote), MS Office (Word, Excel, PowerPoint), Sublime Text 3'
+        )
+      )
+    ),
+    React.createElement(
+      'div',
+      { className: 'row' },
+      React.createElement(
+        'h3',
+        { className: 'well' },
+        'Experience'
+      ),
+      React.createElement(
+        'div',
+        { className: 'body-text' },
+        React.createElement(
+          'p',
+          null,
+          React.createElement(
+            'strong',
+            null,
+            'Call-Em-all'
+          ),
+          ' - Frisco, Texas'
+        ),
+        React.createElement(
+          'p',
+          { className: 'indent' },
+          'Front End Developer (started December 2015)'
+        ),
+        React.createElement(
+          'p',
+          { className: 'indent' },
+          'Primarily work on engineering team to develop the next iteration of the desktop client application. Help solve customer support issues that arise on the personal and technical levels. Primarily using React.js and node.js. All team members work to contribute to the entire customer experience.'
+        )
+      )
+    ),
+    React.createElement(
+      'div',
+      { className: 'row' },
+      React.createElement(
+        'h3',
+        { className: 'well' },
+        'Education'
+      ),
+      React.createElement(
+        'div',
+        { className: 'body-text' },
+        React.createElement(
+          'p',
+          null,
+          React.createElement(
+            'strong',
+            null,
+            'The Iron Yard'
+          ),
+          ' - Austin, Texas'
+        ),
+        React.createElement(
+          'p',
+          { className: 'indent' },
+          'Front End Engineering Certification (November 2015)'
+        ),
+        React.createElement(
+          'p',
+          null,
+          React.createElement(
+            'strong',
+            null,
+            'Texas A&M University-Commerce'
+          ),
+          ' - Commerce, Texas\u2028'
+        ),
+        React.createElement(
+          'p',
+          { className: 'indent' },
+          'Candidate for Master of Music Education (Summer 2016)\u2028'
+        ),
+        React.createElement(
+          'p',
+          { className: 'indent' },
+          'Bachelor of Science in Music Education (May 2002)'
+        )
+      )
+    ),
+    React.createElement(
+      'div',
+      { className: 'row' },
+      React.createElement(
+        'h3',
+        { className: 'well' },
+        'Personal Projects '
+      ),
+      React.createElement(
+        'div',
+        { className: 'body-text' },
+        React.createElement(
+          'p',
+          null,
+          React.createElement(
+            'strong',
+            null,
+            React.createElement(
+              'a',
+              { href: 'http://www.drumsensei.com/' },
+              'Drumsensei.com'
+            )
+          )
+        ),
+        React.createElement(
+          'p',
+          { className: 'indent' },
+          'Personal blog site launched in June 2015.'
+        ),
+        React.createElement(
+          'p',
+          null,
+          React.createElement(
+            'strong',
+            null,
+            React.createElement(
+              'a',
+              { href: 'http://drumr.getforge.io/' },
+              'Drumr'
+            )
+          )
+        ),
+        React.createElement(
+          'p',
+          { className: 'indent' },
+          'Written using React, Parse, and Masonry, this app provides a searchable database for users to find drummers, add new drummers, or add existing drummers to a favorites list.'
+        ),
+        React.createElement(
+          'p',
+          null,
+          React.createElement(
+            'strong',
+            null,
+            'The Mathew Group'
+          )
+        ),
+        React.createElement(
+          'p',
+          { className: 'indent' },
+          'From 2005 to 2014, I designed and implemented websites for local high school band programs using Rapidweaver and basic HTML and CSS.'
+        )
+      )
+    ),
+    React.createElement(
+      'div',
+      { className: 'row' },
+      React.createElement(
+        'h3',
+        { className: 'well' },
+        'Group Projects '
+      ),
+      React.createElement(
+        'div',
+        { className: 'body-text' },
+        React.createElement(
+          'p',
+          null,
+          React.createElement(
+            'strong',
+            null,
+            React.createElement(
+              'a',
+              { href: 'http://tiy-austin-front-end-engineering.github.io/' },
+              'Iron Quizzes'
+            )
+          )
+        ),
+        React.createElement(
+          'p',
+          { className: 'indent' },
+          'Working with 16 developers using React, Parse, and Skeleton, this app lets teachers login to create/edit tests and view multiple kinds of analytics. Students can also login and take tests assigned to their specific class.'
+        ),
+        React.createElement(
+          'p',
+          null,
+          React.createElement(
+            'strong',
+            null,
+            React.createElement(
+              'a',
+              { href: 'http://m2mathew.github.io/' },
+              'Find a Spot'
+            )
+          )
+        ),
+        React.createElement(
+          'p',
+          { className: 'indent' },
+          'Constructed with 2 front-end developers, 1 back-end developer, and 1 designer, this app uses Backbone and jQuery to let a logged-in user find an open parking spot at a selection of Austin restaurants. This was conceived, designed, and deployed in three days.\u2028'
+        )
+      )
+    ),
+    React.createElement(
+      'a',
+      { href: '../../assets/Resume-Michael_Mathew.pdf', target: '_blank' },
+      React.createElement(
+        'p',
+        { className: 'ghost-button' },
+        'Get the .pdf'
+      )
+    )
+  );
+};
+
+exports['default'] = Resume;
+module.exports = exports['default'];
 
 },{"./Title":419,"react":409}],419:[function(require,module,exports){
 // External
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 var React = require('react');
 
 // Component Definition
-module.exports = React.createClass({
-  displayName: "exports",
+var Title = function Title() {
+  return React.createElement(
+    "div",
+    { className: "title" },
+    React.createElement(
+      "h1",
+      { className: "text-left" },
+      "Mike Mathew"
+    ),
+    React.createElement(
+      "h3",
+      { className: "text-left" },
+      "front end web developer"
+    )
+  );
+};
 
-  render: function render() {
-    return React.createElement(
-      "div",
-      { className: "title" },
-      React.createElement(
-        "h1",
-        { className: "text-left" },
-        "Mike Mathew"
-      ),
-      React.createElement(
-        "h3",
-        { className: "text-left" },
-        "front end web developer"
-      )
-    );
-  }
-});
+exports["default"] = Title;
+module.exports = exports["default"];
 
 },{"react":409}],420:[function(require,module,exports){
 // External
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 var React = require('react');
 
 // Component Definition
-module.exports = React.createClass({
-  displayName: "exports",
-
-  render: function render() {
-    return React.createElement(
+var Work = function Work() {
+  return React.createElement(
+    "div",
+    { className: "container work-box" },
+    React.createElement(
+      "h1",
+      { className: "text-center" },
+      "My work so far"
+    ),
+    React.createElement(
       "div",
-      { className: "container work-box" },
-      React.createElement(
-        "h1",
-        { className: "text-center" },
-        "My work so far"
-      ),
+      { className: "row card" },
       React.createElement(
         "div",
-        { className: "row card" },
+        { className: "col-md-4" },
         React.createElement(
-          "div",
-          { className: "col-md-4" },
+          "h1",
+          { className: "title-h1" },
+          "Drumr"
+        ),
+        React.createElement(
+          "p",
+          null,
+          "A way to find and keep track of your favorite drummers. This application was designed and built in a two-week period as a final project for The Iron Yard. It uses Masonry to organize the photos and React to load the information quickly."
+        ),
+        React.createElement(
+          "p",
+          null,
           React.createElement(
-            "h1",
-            { className: "title-h1" },
-            "Drumr"
+            "strong",
+            null,
+            "Built With"
           ),
+          React.createElement("br", null),
+          "HTML5 / CSS3 / React.js / Backbone.js / Parse API / Masonry / Sass"
+        ),
+        React.createElement(
+          "a",
+          { href: "http://drumr.getforge.io/", target: "_blank" },
           React.createElement(
             "p",
-            null,
-            "A way to find and keep track of your favorite drummers. This application was designed and built in a two-week period as a final project for The Iron Yard. It uses Masonry to organize the photos and React to load the information quickly."
-          ),
-          React.createElement(
-            "p",
-            null,
-            React.createElement(
-              "strong",
-              null,
-              "Built With"
-            ),
-            React.createElement("br", null),
-            "HTML5 / CSS3 / React.js / Backbone.js / Parse API / Masonry / Sass"
-          ),
-          React.createElement(
-            "a",
-            { href: "http://drumr.getforge.io/", target: "_blank" },
-            React.createElement(
-              "p",
-              { className: "ghost-button" },
-              "Visit Website"
-            )
-          ),
-          React.createElement(
-            "a",
-            { href: "https://github.com/m2mathew/drumr-app-v2", target: "_blank" },
-            React.createElement(
-              "p",
-              { className: "ghost-button" },
-              "View Code"
-            )
+            { className: "ghost-button" },
+            "Visit Website"
           )
         ),
         React.createElement(
-          "div",
-          { className: "col-md-8 m-img-top" },
-          React.createElement("img", { src: "../../images/drumr-screenshot.png", alt: "Screenshot of drummer application", className: "img-responsive screenshot" })
+          "a",
+          { href: "https://github.com/m2mathew/drumr-app-v2", target: "_blank" },
+          React.createElement(
+            "p",
+            { className: "ghost-button" },
+            "View Code"
+          )
         )
       ),
       React.createElement(
         "div",
-        { className: "row card" },
-        React.createElement(
-          "div",
-          { className: "col-md-4" },
-          React.createElement(
-            "h1",
-            { className: "title-h1" },
-            "Iron Quizzes"
-          ),
-          React.createElement(
-            "p",
-            null,
-            "Working with 16 developers using React, Parse, and Skeleton, this app lets teachers login to create/edit tests and view multiple kinds of analytics. Students can also login and take tests assigned to their specific class. Most of my work involved the analytics data for teachers to access."
-          ),
-          React.createElement(
-            "p",
-            null,
-            React.createElement(
-              "strong",
-              null,
-              "Built With"
-            ),
-            React.createElement("br", null),
-            "HTML5 / CSS3 / React.js / Backbone.js / Parse API / Sass"
-          ),
-          React.createElement(
-            "a",
-            { href: "http://tiy-austin-front-end-engineering.github.io/", target: "_blank" },
-            React.createElement(
-              "p",
-              { className: "ghost-button" },
-              "Visit Website"
-            )
-          ),
-          React.createElement(
-            "a",
-            { href: "https://github.com/TIY-Austin-Front-End-Engineering/Iron-Quizzes", target: "_blank" },
-            React.createElement(
-              "p",
-              { className: "ghost-button" },
-              "View Code"
-            )
-          )
-        ),
-        React.createElement(
-          "div",
-          { className: "col-md-8 m-img-top" },
-          React.createElement("img", { src: "../../images/iron-quizzes-screenshot.png", alt: "Screenshot of Iron Quizzes application", className: "img-responsive screenshot" })
-        )
-      ),
-      React.createElement(
-        "div",
-        { className: "row card" },
-        React.createElement(
-          "div",
-          { className: "col-md-4" },
-          React.createElement(
-            "h1",
-            { className: "title-h1" },
-            "Find a Spot"
-          ),
-          React.createElement(
-            "p",
-            null,
-            "Constructed with 2 front-end developers, 1 back-end developer, and 1 designer, this app uses Backbone and jQuery to let a logged-in user find an open parking spot at a selection of Austin restaurants. This was conceived, designed, and deployed in four days.\u2028"
-          ),
-          React.createElement(
-            "p",
-            null,
-            React.createElement(
-              "strong",
-              null,
-              "Built With"
-            ),
-            React.createElement("br", null),
-            "HTML5 / CSS3 / Backbone.js / Sass"
-          ),
-          React.createElement(
-            "a",
-            { href: "https://m2mathew.github.io/", target: "_blank" },
-            React.createElement(
-              "p",
-              { className: "ghost-button" },
-              "Visit Website"
-            )
-          ),
-          React.createElement(
-            "a",
-            { href: "https://github.com/m2mathew/find-a-spot", target: "_blank" },
-            React.createElement(
-              "p",
-              { className: "ghost-button" },
-              "View Code"
-            )
-          )
-        ),
-        React.createElement(
-          "div",
-          { className: "col-md-8 m-img-top" },
-          React.createElement("img", { src: "../../images/find-a-spot-screenshot.png", alt: "Screenshot of Find a Spot application", className: "img-responsive screenshot" })
-        )
+        { className: "col-md-8 m-img-top" },
+        React.createElement("img", { src: "../../images/drumr-screenshot.png", alt: "Screenshot of drummer application", className: "img-responsive screenshot" })
       )
-    );
-  }
-});
+    ),
+    React.createElement(
+      "div",
+      { className: "row card" },
+      React.createElement(
+        "div",
+        { className: "col-md-4" },
+        React.createElement(
+          "h1",
+          { className: "title-h1" },
+          "Iron Quizzes"
+        ),
+        React.createElement(
+          "p",
+          null,
+          "Working with 16 developers using React, Parse, and Skeleton, this app lets teachers login to create/edit tests and view multiple kinds of analytics. Students can also login and take tests assigned to their specific class. Most of my work involved the analytics data for teachers to access."
+        ),
+        React.createElement(
+          "p",
+          null,
+          React.createElement(
+            "strong",
+            null,
+            "Built With"
+          ),
+          React.createElement("br", null),
+          "HTML5 / CSS3 / React.js / Backbone.js / Parse API / Sass"
+        ),
+        React.createElement(
+          "a",
+          { href: "http://tiy-austin-front-end-engineering.github.io/", target: "_blank" },
+          React.createElement(
+            "p",
+            { className: "ghost-button" },
+            "Visit Website"
+          )
+        ),
+        React.createElement(
+          "a",
+          { href: "https://github.com/TIY-Austin-Front-End-Engineering/Iron-Quizzes", target: "_blank" },
+          React.createElement(
+            "p",
+            { className: "ghost-button" },
+            "View Code"
+          )
+        )
+      ),
+      React.createElement(
+        "div",
+        { className: "col-md-8 m-img-top" },
+        React.createElement("img", { src: "../../images/iron-quizzes-screenshot.png", alt: "Screenshot of Iron Quizzes application", className: "img-responsive screenshot" })
+      )
+    ),
+    React.createElement(
+      "div",
+      { className: "row card" },
+      React.createElement(
+        "div",
+        { className: "col-md-4" },
+        React.createElement(
+          "h1",
+          { className: "title-h1" },
+          "Find a Spot"
+        ),
+        React.createElement(
+          "p",
+          null,
+          "Constructed with 2 front-end developers, 1 back-end developer, and 1 designer, this app uses Backbone and jQuery to let a logged-in user find an open parking spot at a selection of Austin restaurants. This was conceived, designed, and deployed in four days.\u2028"
+        ),
+        React.createElement(
+          "p",
+          null,
+          React.createElement(
+            "strong",
+            null,
+            "Built With"
+          ),
+          React.createElement("br", null),
+          "HTML5 / CSS3 / Backbone.js / Sass"
+        ),
+        React.createElement(
+          "a",
+          { href: "https://m2mathew.github.io/", target: "_blank" },
+          React.createElement(
+            "p",
+            { className: "ghost-button" },
+            "Visit Website"
+          )
+        ),
+        React.createElement(
+          "a",
+          { href: "https://github.com/m2mathew/find-a-spot", target: "_blank" },
+          React.createElement(
+            "p",
+            { className: "ghost-button" },
+            "View Code"
+          )
+        )
+      ),
+      React.createElement(
+        "div",
+        { className: "col-md-8 m-img-top" },
+        React.createElement("img", { src: "../../images/find-a-spot-screenshot.png", alt: "Screenshot of Find a Spot application", className: "img-responsive screenshot" })
+      )
+    )
+  );
+};
+
+exports["default"] = Work;
+module.exports = exports["default"];
 
 },{"react":409}],421:[function(require,module,exports){
 // External
