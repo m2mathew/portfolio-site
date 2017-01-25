@@ -49735,9 +49735,9 @@ module.exports = React.createClass({
 'use strict';
 
 var React = require('react');
-var TitleComponent = require('./TitleComponent');
-var AboutComponent = require('./AboutComponent');
-var WorkComponent = require('./WorkComponent');
+var Title = require('./Title');
+var About = require('./About');
+var Work = require('./Work');
 
 module.exports = React.createClass({
   displayName: 'exports',
@@ -49746,14 +49746,14 @@ module.exports = React.createClass({
     return React.createElement(
       'section',
       { className: 'home-box row col-sm-12' },
-      React.createElement(TitleComponent, null),
-      React.createElement(AboutComponent, null),
-      React.createElement(WorkComponent, null)
+      React.createElement(Title, null),
+      React.createElement(About, null),
+      React.createElement(Work, null)
     );
   }
 });
 
-},{"./AboutComponent":415,"./TitleComponent":419,"./WorkComponent":420,"react":409}],417:[function(require,module,exports){
+},{"./About":415,"./Title":419,"./Work":420,"react":409}],417:[function(require,module,exports){
 'use strict';
 
 var React = require('react');
@@ -49836,7 +49836,7 @@ module.exports = React.createClass({
 'use strict';
 
 var React = require('react');
-var TitleComponent = require('./TitleComponent');
+var Title = require('./Title');
 
 module.exports = React.createClass({
   displayName: 'exports',
@@ -49845,7 +49845,7 @@ module.exports = React.createClass({
     return React.createElement(
       'section',
       { className: 'row resume-box col-sm-12' },
-      React.createElement(TitleComponent, null),
+      React.createElement(Title, null),
       React.createElement(
         'div',
         { className: 'row' },
@@ -50116,7 +50116,7 @@ module.exports = React.createClass({
   }
 });
 
-},{"./TitleComponent":419,"react":409}],419:[function(require,module,exports){
+},{"./Title":419,"react":409}],419:[function(require,module,exports){
 "use strict";
 
 var React = require('react');
@@ -50329,9 +50329,9 @@ var Backbone = require('backbone');
 window.$ = require('jquery');
 window.jQuery = $;
 
-var HomeComponent = require('./components/HomeComponent');
-var NavigationComponent = require('./components/NavigationComponent');
-var ResumeComponent = require('./components/ResumeComponent');
+var Home = require('./components/Home');
+var Navigation = require('./components/Navigation');
+var Resume = require('./components/Resume');
 
 var app = document.getElementById('app');
 var nav = document.getElementById('nav');
@@ -50342,18 +50342,18 @@ var Router = Backbone.Router.extend({
 		'resume': 'resume'
 	},
 	home: function home() {
-		ReactDOM.render(React.createElement(HomeComponent, null), app);
+		ReactDOM.render(React.createElement(Home, null), app);
 	},
 	resume: function resume() {
-		ReactDOM.render(React.createElement(ResumeComponent, null), app);
+		ReactDOM.render(React.createElement(Resume, null), app);
 	}
 });
 
 var r = new Router();
 Backbone.history.start();
 
-ReactDOM.render(React.createElement(NavigationComponent, { router: r }), nav);
+ReactDOM.render(React.createElement(Navigation, { router: r }), nav);
 
-},{"./components/HomeComponent":416,"./components/NavigationComponent":417,"./components/ResumeComponent":418,"backbone":11,"jquery":93,"react":409,"react-dom":256}]},{},[421])
+},{"./components/Home":416,"./components/Navigation":417,"./components/Resume":418,"backbone":11,"jquery":93,"react":409,"react-dom":256}]},{},[421])
 
 //# sourceMappingURL=bundle.js.map
