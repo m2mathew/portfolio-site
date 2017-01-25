@@ -90,16 +90,13 @@ nav {
 	padding: auto 1.5em;
 	padding-bottom: 1em;
 	border-bottom: 6px solid gray;
-
-	h3 {
-		font-family: $header;
-		font-weight: 300;
-		line-height: 30px;
-		font-size: 14px;
-	}
+	font-family: $header;
+	font-weight: 200;
+	line-height: 50px;
+	font-size: 20px;
 
 	a {
-		color: #9640B9;
+		color: lightcoral;
 	}
 
 	.modal {

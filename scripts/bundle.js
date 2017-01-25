@@ -49495,14 +49495,49 @@ module.exports = React.createClass({
         'div',
         { className: 'row text-justify' },
         React.createElement(
-          'h3',
+          'strong',
           null,
-          React.createElement(
-            'strong',
-            null,
-            'HOW TO MAKE A FRONT END DEVELOPER NAMED MIKE'
-          ),
-          ' • FALL IN LOVE WITH LEARNING • GET A TRS-80 FROM UNCLE RICKY AND LEARN TO PROGRAM IN BASIC • START HITTING THINGS WITH DRUMSTICKS • PLAY LOTS OF VIDEO GAMES • TAKE TWO YEARS OF COMPUTER SCIENCE IN HIGH SCHOOL USING C++ AND TURBO PASCAL • SIT NEXT TO FUTURE WIFE IN COMPUTER SCIENCE • MAJOR IN MUSIC EDUCATION IN COLLEGE • ',
+          'HOW TO MAKE A FRONT END DEVELOPER NAMED MIKE '
+        ),
+        React.createElement(
+          'span',
+          null,
+          '• FALL IN LOVE WITH LEARNING '
+        ),
+        React.createElement(
+          'span',
+          null,
+          '• GET A TRS-80 FROM UNCLE RICKY AND LEARN TO PROGRAM IN BASIC '
+        ),
+        React.createElement(
+          'span',
+          null,
+          '• START HITTING THINGS WITH DRUMSTICKS '
+        ),
+        React.createElement(
+          'span',
+          null,
+          '• PLAY LOTS OF VIDEO GAMES '
+        ),
+        React.createElement(
+          'span',
+          null,
+          '• TAKE TWO YEARS OF COMPUTER SCIENCE IN HIGH SCHOOL USING C++ AND TURBO PASCAL '
+        ),
+        React.createElement(
+          'span',
+          null,
+          '• SIT NEXT TO FUTURE WIFE IN COMPUTER SCIENCE '
+        ),
+        React.createElement(
+          'span',
+          null,
+          '• MAJOR IN MUSIC EDUCATION IN COLLEGE '
+        ),
+        React.createElement(
+          'span',
+          null,
+          '• ',
           React.createElement(
             'a',
             { 'data-toggle': 'modal', href: '#dci', className: 'text-callout' },
@@ -49538,8 +49573,17 @@ module.exports = React.createClass({
                 )
               )
             )
-          ),
-          ' • SPEND EQUAL TIME WRITING MUSIC ON A COMPUTER AS PERFORMING IT • ',
+          )
+        ),
+        React.createElement(
+          'span',
+          null,
+          ' • SPEND EQUAL TIME WRITING MUSIC ON A COMPUTER AS PERFORMING IT '
+        ),
+        React.createElement(
+          'span',
+          null,
+          '• ',
           React.createElement(
             'a',
             { 'data-toggle': 'modal', href: '#wedding', className: 'text-callout' },
@@ -49575,8 +49619,17 @@ module.exports = React.createClass({
                 )
               )
             )
-          ),
-          ' • GRADUATE COLLEGE AND TEACH MUSIC FOR OVER A DECADE • ',
+          )
+        ),
+        React.createElement(
+          'span',
+          null,
+          ' • GRADUATE COLLEGE AND TEACH MUSIC FOR OVER A DECADE '
+        ),
+        React.createElement(
+          'span',
+          null,
+          '• ',
           React.createElement(
             'a',
             { 'data-toggle': 'modal', href: '#trinity', className: 'text-callout' },
@@ -49612,8 +49665,17 @@ module.exports = React.createClass({
                 )
               )
             )
-          ),
-          ' • MAKE WEBSITES FOR YOUR BAND PROGRAMS • ',
+          )
+        ),
+        React.createElement(
+          'span',
+          null,
+          ' • MAKE WEBSITES FOR YOUR BAND PROGRAMS '
+        ),
+        React.createElement(
+          'span',
+          null,
+          '• ',
           React.createElement(
             'a',
             { 'data-toggle': 'modal', href: '#kids', className: 'text-callout' },
@@ -49649,8 +49711,17 @@ module.exports = React.createClass({
                 )
               )
             )
-          ),
-          ' • REALIZE THAT YOU SPEND AS MUCH TIME FORMATTING AN EMAIL AS TEACHING • ',
+          )
+        ),
+        React.createElement(
+          'span',
+          null,
+          ' • REALIZE THAT YOU SPEND AS MUCH TIME FORMATTING AN EMAIL AS TEACHING '
+        ),
+        React.createElement(
+          'span',
+          null,
+          '• ',
           React.createElement(
             'a',
             { 'data-toggle': 'modal', href: '#bro', className: 'text-callout' },
@@ -49686,8 +49757,22 @@ module.exports = React.createClass({
                 )
               )
             )
-          ),
-          ' • START LEARNING MORE CODE • SWITCH GEARS FROM BEING A BAND DIRECTOR TO A WEB DEVELOPER • ',
+          )
+        ),
+        React.createElement(
+          'span',
+          null,
+          ' • START LEARNING MORE CODE '
+        ),
+        React.createElement(
+          'span',
+          null,
+          '• SWITCH GEARS FROM BEING A BAND DIRECTOR TO A WEB DEVELOPER '
+        ),
+        React.createElement(
+          'span',
+          null,
+          '• ',
           React.createElement(
             'a',
             { 'data-toggle': 'modal', href: '#tiy', className: 'text-callout' },
@@ -49723,7 +49808,11 @@ module.exports = React.createClass({
                 )
               )
             )
-          ),
+          )
+        ),
+        React.createElement(
+          'span',
+          null,
           ' • KEEP LEARNING AND MAKING AWESOME THINGS.'
         )
       )

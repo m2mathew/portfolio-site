@@ -20,10 +20,16 @@ module.exports = React.createClass({
     return (
       <div className="container about-box">
         <div className="row text-justify">
-          <h3><strong>HOW TO MAKE A FRONT END DEVELOPER NAMED MIKE</strong> &bull; FALL IN LOVE WITH LEARNING &bull; GET A TRS-80 FROM UNCLE RICKY AND LEARN TO PROGRAM IN BASIC &bull; START HITTING THINGS WITH DRUMSTICKS &bull; PLAY LOTS OF VIDEO GAMES &bull; TAKE TWO YEARS OF COMPUTER SCIENCE IN HIGH SCHOOL USING C++ AND TURBO PASCAL &bull; SIT NEXT TO FUTURE WIFE IN COMPUTER SCIENCE &bull; MAJOR IN MUSIC EDUCATION IN COLLEGE &bull;&nbsp;
-
-          <a data-toggle="modal" href="#dci" className="text-callout">TOUR AND PERFORM WITH A DRUM AND BUGLE CORPS</a>
-
+          <strong>HOW TO MAKE A FRONT END DEVELOPER NAMED MIKE </strong>
+          <span>&bull; FALL IN LOVE WITH LEARNING </span>
+          <span>&bull; GET A TRS-80 FROM UNCLE RICKY AND LEARN TO PROGRAM IN BASIC </span>
+          <span>&bull; START HITTING THINGS WITH DRUMSTICKS </span>
+          <span>&bull; PLAY LOTS OF VIDEO GAMES </span>
+          <span>&bull; TAKE TWO YEARS OF COMPUTER SCIENCE IN HIGH SCHOOL USING C++ AND TURBO PASCAL </span>
+          <span>&bull; SIT NEXT TO FUTURE WIFE IN COMPUTER SCIENCE </span>
+          <span>&bull; MAJOR IN MUSIC EDUCATION IN COLLEGE </span>
+          <span>&bull;&nbsp;
+            <a data-toggle="modal" href="#dci" className="text-callout">TOUR AND PERFORM WITH A DRUM AND BUGLE CORPS</a>
             <div className="modal fade" id="dci" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div className="modal-dialog modal-lg">
                 <div className="modal-content">
@@ -37,11 +43,10 @@ module.exports = React.createClass({
                 </div>
               </div>
             </div>
-
-          &nbsp;&bull; SPEND EQUAL TIME WRITING MUSIC ON A COMPUTER AS PERFORMING IT &bull;&nbsp;
-
-          <a data-toggle="modal" href="#wedding" className="text-callout">GET MARRIED TO YOUR HIGH SCHOOL SWEETHEART</a>
-
+          </span>
+          <span>&nbsp;&bull; SPEND EQUAL TIME WRITING MUSIC ON A COMPUTER AS PERFORMING IT </span>
+          <span>&bull;&nbsp;
+            <a data-toggle="modal" href="#wedding" className="text-callout">GET MARRIED TO YOUR HIGH SCHOOL SWEETHEART</a>
             <div className="modal fade" id="wedding" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div className="modal-dialog modal-lg">
                 <div className="modal-content">
@@ -55,11 +60,10 @@ module.exports = React.createClass({
                 </div>
               </div>
             </div>
-
-          &nbsp;&bull; GRADUATE COLLEGE AND TEACH MUSIC FOR OVER A DECADE &bull;&nbsp;
-
-          <a data-toggle="modal" href="#trinity" className="text-callout">CONVINCE STUDENTS TO WORK HARD ENOUGH TO WIN AN INTERNATIONAL COMPETITION</a>
-
+          </span>
+          <span>&nbsp;&bull; GRADUATE COLLEGE AND TEACH MUSIC FOR OVER A DECADE </span>
+          <span>&bull;&nbsp;
+            <a data-toggle="modal" href="#trinity" className="text-callout">CONVINCE STUDENTS TO WORK HARD ENOUGH TO WIN AN INTERNATIONAL COMPETITION</a>
             <div className="modal fade" id="trinity" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div className="modal-dialog modal-lg">
                 <div className="modal-content">
@@ -73,11 +77,11 @@ module.exports = React.createClass({
                 </div>
               </div>
             </div>
+          </span>
 
-          &nbsp;&bull; MAKE WEBSITES FOR YOUR BAND PROGRAMS &bull;&nbsp;
-
-          <a data-toggle="modal" href="#kids" className="text-callout">HAVE THREE KIDS ALONG THE WAY</a>
-
+          <span>&nbsp;&bull; MAKE WEBSITES FOR YOUR BAND PROGRAMS </span>
+          <span>&bull;&nbsp;
+            <a data-toggle="modal" href="#kids" className="text-callout">HAVE THREE KIDS ALONG THE WAY</a>
             <div className="modal fade" id="kids" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div className="modal-dialog modal-lg">
                 <div className="modal-content">
@@ -91,11 +95,10 @@ module.exports = React.createClass({
                 </div>
               </div>
             </div>
-
-           &nbsp;&bull; REALIZE THAT YOU SPEND AS MUCH TIME FORMATTING AN EMAIL AS TEACHING &bull;&nbsp;
-
-          <a data-toggle="modal" href="#bro" className="text-callout">BECOME THE GUARDIAN FOR YOUR LITTLE BROTHER</a>
-
+          </span>
+          <span>&nbsp;&bull; REALIZE THAT YOU SPEND AS MUCH TIME FORMATTING AN EMAIL AS TEACHING </span>
+          <span>&bull;&nbsp;
+            <a data-toggle="modal" href="#bro" className="text-callout">BECOME THE GUARDIAN FOR YOUR LITTLE BROTHER</a>
             <div className="modal fade" id="bro" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div className="modal-dialog modal-lg">
                 <div className="modal-content">
@@ -109,12 +112,11 @@ module.exports = React.createClass({
                 </div>
               </div>
             </div>
-
-           &nbsp;&bull; START LEARNING MORE CODE &bull; SWITCH GEARS FROM BEING A BAND DIRECTOR TO A WEB DEVELOPER &bull;&nbsp;
-
-
-          <a data-toggle="modal" href="#tiy" className="text-callout">ENROLL AT A CODE SCHOOL THREE HOURS FROM HOME</a>
-
+          </span>
+          <span>&nbsp;&bull; START LEARNING MORE CODE </span>
+          <span>&bull; SWITCH GEARS FROM BEING A BAND DIRECTOR TO A WEB DEVELOPER </span>
+          <span>&bull;&nbsp;
+            <a data-toggle="modal" href="#tiy" className="text-callout">ENROLL AT A CODE SCHOOL THREE HOURS FROM HOME</a>
             <div className="modal fade" id="tiy" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div className="modal-dialog modal-lg">
                 <div className="modal-content">
@@ -128,8 +130,8 @@ module.exports = React.createClass({
                 </div>
               </div>
             </div>
-
-            &nbsp;&bull; KEEP LEARNING AND MAKING AWESOME THINGS.</h3>
+          </span>
+          <span>&nbsp;&bull; KEEP LEARNING AND MAKING AWESOME THINGS.</span>
         </div>
       </div>
     );

@@ -58,14 +58,13 @@ nav #menu .active a {
   margin-bottom: 1em;
   padding: auto 1.5em;
   padding-bottom: 1em;
-  border-bottom: 6px solid gray; }
-  .about-box h3 {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    line-height: 30px;
-    font-size: 14px; }
+  border-bottom: 6px solid gray;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+  line-height: 50px;
+  font-size: 20px; }
   .about-box a {
-    color: #9640B9; }
+    color: lightcoral; }
   .about-box .modal {
     padding: 1em; }
     .about-box .modal .modal-pic {
