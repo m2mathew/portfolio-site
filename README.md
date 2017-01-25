@@ -29,3 +29,8 @@ This portfolio relies on only the finest tools:
 
 * **Sass** - for organized stylesheets
 
+### Ship it!
+
+For easy deployment using gulp do this:
+
+`gulp build -o ./dist`
