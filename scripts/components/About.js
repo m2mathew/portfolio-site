@@ -1,6 +1,9 @@
+// External
 const React = require('react');
 const Modal = require('react-bootstrap').Modal;
 
+
+// Component Definition
 module.exports = React.createClass({
   getInitialState() {
      return { showModal: false };

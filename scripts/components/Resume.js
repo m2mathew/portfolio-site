@@ -1,8 +1,12 @@
+// External
 const React = require('react');
+
+// Internal
 const Title = require('./Title');
 
-module.exports = React.createClass({
 
+// Component Definition
+module.exports = React.createClass({
   render () {
     return (
       <section className="row resume-box col-sm-12">

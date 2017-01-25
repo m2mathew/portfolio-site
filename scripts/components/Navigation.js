@@ -1,6 +1,9 @@
+// External
 const React = require('react');
 const Backbone = require('backbone');
 
+
+// Component Definition
 module.exports = React.createClass({
   getInitialState() {
     return {

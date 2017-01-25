@@ -49465,11 +49465,13 @@ module.exports = warning;
 }).call(this,require('_process'))
 
 },{"_process":164}],415:[function(require,module,exports){
+// External
 'use strict';
 
 var React = require('react');
 var Modal = require('react-bootstrap').Modal;
 
+// Component Definition
 module.exports = React.createClass({
   displayName: 'exports',
 
@@ -49821,13 +49823,17 @@ module.exports = React.createClass({
 });
 
 },{"react":409,"react-bootstrap":245}],416:[function(require,module,exports){
+// External
 'use strict';
 
 var React = require('react');
+
+// Internal
 var Title = require('./Title');
 var About = require('./About');
 var Work = require('./Work');
 
+// Component Definition
 module.exports = React.createClass({
   displayName: 'exports',
 
@@ -49843,11 +49849,13 @@ module.exports = React.createClass({
 });
 
 },{"./About":415,"./Title":419,"./Work":420,"react":409}],417:[function(require,module,exports){
+// External
 'use strict';
 
 var React = require('react');
 var Backbone = require('backbone');
 
+// Component Definition
 module.exports = React.createClass({
   displayName: 'exports',
 
@@ -49922,11 +49930,15 @@ module.exports = React.createClass({
 });
 
 },{"backbone":11,"react":409}],418:[function(require,module,exports){
+// External
 'use strict';
 
 var React = require('react');
+
+// Internal
 var Title = require('./Title');
 
+// Component Definition
 module.exports = React.createClass({
   displayName: 'exports',
 
@@ -50206,10 +50218,12 @@ module.exports = React.createClass({
 });
 
 },{"./Title":419,"react":409}],419:[function(require,module,exports){
+// External
 "use strict";
 
 var React = require('react');
 
+// Component Definition
 module.exports = React.createClass({
   displayName: "exports",
 
@@ -50232,10 +50246,12 @@ module.exports = React.createClass({
 });
 
 },{"react":409}],420:[function(require,module,exports){
+// External
 "use strict";
 
 var React = require('react');
 
+// Component Definition
 module.exports = React.createClass({
   displayName: "exports",
 
@@ -50409,22 +50425,25 @@ module.exports = React.createClass({
 });
 
 },{"react":409}],421:[function(require,module,exports){
+// External
 'use strict';
 
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Backbone = require('backbone');
 
-window.$ = require('jquery');
-window.jQuery = $;
-
+// Internal
 var Home = require('./components/Home');
 var Navigation = require('./components/Navigation');
 var Resume = require('./components/Resume');
 
+window.$ = require('jquery');
+window.jQuery = $;
+
 var app = document.getElementById('app');
 var nav = document.getElementById('nav');
 
+// Backbone router
 var Router = Backbone.Router.extend({
 	routes: {
 		'': 'home',
@@ -50441,6 +50460,7 @@ var Router = Backbone.Router.extend({
 var r = new Router();
 Backbone.history.start();
 
+// Render the app to the DOM
 ReactDOM.render(React.createElement(Navigation, { router: r }), nav);
 
 },{"./components/Home":416,"./components/Navigation":417,"./components/Resume":418,"backbone":11,"jquery":93,"react":409,"react-dom":256}]},{},[421])
