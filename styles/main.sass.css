@@ -174,20 +174,20 @@ footer {
   background-color: #CCC4EA;
   margin: 0;
   margin-top: 1em;
-  padding: 2em 1em;
+  padding: 32px 16px;
   padding-left: 2em;
   border-top: 5px solid #454174; }
   footer #twitter {
-    width: 50px;
-    height: 50px;
-    margin-right: 0.75em; }
-  footer #github {
     width: 45px;
     height: 45px;
+    margin-right: 0.75em; }
+  footer #github {
+    width: 40px;
+    height: 40px;
     margin-right: 1em; }
   footer #linkedin {
-    width: 45px;
-    height: 34px;
+    width: 40px;
+    height: 29px;
     margin-right: 1em; }
   footer span {
     display: block; }
@@ -208,7 +208,9 @@ footer {
   .title {
     border-bottom: 8px solid gray; }
   .about-box {
-    border-bottom: 8px solid gray; } }
+    border-bottom: 8px solid gray; }
+  footer span {
+    display: inline; } }
 
 @media screen and (min-width: 768px) {
   .title {
@@ -220,10 +222,9 @@ footer {
       font-weight: 300;
       font-size: 22px; }
   .about-box {
-    border-bottom: 10px solid gray; }
-    .about-box h3 {
-      line-height: 40px;
-      font-size: 16px; }
+    border-bottom: 10px solid gray;
+    line-height: 40px;
+    font-size: 16px; }
   .work-box > h1 {
     font-size: 30px; }
   .resume-box .ghost-button {
@@ -257,7 +258,7 @@ footer {
   .title h3 {
     font-size: 30px;
     text-align: right; }
-  .about-box h3 {
+  .about-box {
     line-height: 42px;
     font-size: 19px; }
   .work-box > h1 {
@@ -266,7 +267,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .title h1 {
     font-size: 165px; }
-  .about-box h3 {
+  .about-box {
     line-height: 50px;
     font-size: 20px; }
   .work-box > h1 {
