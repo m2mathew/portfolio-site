@@ -49959,6 +49959,14 @@ var Navigation = (function (_React$Component) {
           { href: '#resume' },
           'resume'
         )
+      ), React.createElement(
+        'li',
+        { key: 'speaking', className: currentPage === 'speaking' ? 'active nav-link' : 'nav-link' },
+        React.createElement(
+          'a',
+          { href: '#speaking' },
+          'speaking'
+        )
       )];
 
       return React.createElement(
@@ -50504,6 +50512,77 @@ module.exports = exports["default"];
 // External
 'use strict';
 
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+var React = require('react');
+
+// Internal
+var Title = require('../Title');
+
+// Component Definition
+var Speaking = function Speaking() {
+  return React.createElement(
+    'section',
+    { className: 'row speaking-box col-sm-12' },
+    React.createElement(Title, null),
+    React.createElement(
+      'div',
+      { className: 'row' },
+      React.createElement(
+        'h3',
+        { className: 'well' },
+        'Upcoming Events'
+      ),
+      React.createElement(
+        'div',
+        { className: 'body-text' },
+        React.createElement(
+          'p',
+          null,
+          'Contact Mike to check his availability for upcoming events!'
+        )
+      )
+    ),
+    React.createElement(
+      'div',
+      { className: 'row' },
+      React.createElement(
+        'h3',
+        { className: 'well' },
+        'Previous Talks'
+      ),
+      React.createElement(
+        'div',
+        { className: 'previous-talk-box' },
+        React.createElement('img', { src: '../../../images/react-101-screenshot.png', width: '25%', height: '25%' }),
+        React.createElement(
+          'h4',
+          null,
+          'ReactJS @ The Iron Yard'
+        ),
+        React.createElement(
+          'p',
+          null,
+          'React 101'
+        ),
+        React.createElement(
+          'p',
+          null,
+          'January 10, 2017'
+        )
+      )
+    )
+  );
+};
+
+exports['default'] = Speaking;
+module.exports = exports['default'];
+
+},{"../Title":419,"react":409}],422:[function(require,module,exports){
+// External
+'use strict';
+
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Backbone = require('backbone');
@@ -50512,6 +50591,7 @@ var Backbone = require('backbone');
 var Home = require('./components/Home');
 var Navigation = require('./components/Navigation');
 var Resume = require('./components/Resume');
+var Speaking = require('./components/speaking/index');
 
 window.$ = require('jquery');
 window.jQuery = $;
@@ -50523,13 +50603,17 @@ var nav = document.getElementById('nav');
 var Router = Backbone.Router.extend({
 	routes: {
 		'': 'home',
-		'resume': 'resume'
+		'resume': 'resume',
+		'speaking': 'speaking'
 	},
 	home: function home() {
 		ReactDOM.render(React.createElement(Home, null), app);
 	},
 	resume: function resume() {
 		ReactDOM.render(React.createElement(Resume, null), app);
+	},
+	speaking: function speaking() {
+		ReactDOM.render(React.createElement(Speaking, null), app);
 	}
 });
 
@@ -50539,6 +50623,6 @@ Backbone.history.start();
 // Render the app to the DOM
 ReactDOM.render(React.createElement(Navigation, { router: r }), nav);
 
-},{"./components/Home":416,"./components/Navigation":417,"./components/Resume":418,"backbone":11,"jquery":93,"react":409,"react-dom":256}]},{},[421])
+},{"./components/Home":416,"./components/Navigation":417,"./components/Resume":418,"./components/speaking/index":421,"backbone":11,"jquery":93,"react":409,"react-dom":256}]},{},[422])
 
 //# sourceMappingURL=bundle.js.map

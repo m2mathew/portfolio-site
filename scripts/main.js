@@ -7,6 +7,7 @@ const Backbone = require('backbone');
 const Home = require('./components/Home');
 const Navigation = require('./components/Navigation');
 const Resume = require('./components/Resume');
+const Speaking = require('./components/speaking/index');
 
 window.$ = require('jquery');
 window.jQuery = $;
@@ -18,7 +19,8 @@ const nav = document.getElementById('nav');
 const Router = Backbone.Router.extend({
 	routes: {
 		'': 'home',
-		'resume': 'resume'
+		'resume': 'resume',
+		'speaking': 'speaking'
 	},
 	home() {
 		ReactDOM.render(
@@ -28,6 +30,11 @@ const Router = Backbone.Router.extend({
 	resume() {
 		ReactDOM.render(
 			<Resume />, app
+		);
+	},
+	speaking() {
+		ReactDOM.render(
+			<Speaking />, app
 		);
 	}
 });

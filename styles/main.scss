@@ -59,7 +59,7 @@ nav {
 
 .title {
 	width: 100%;
-	margin-top: 4.5em;
+	margin-top: 5em;
 	margin-bottom: 0.5em;
 	padding: 0.5em auto;
 	border-bottom: 6px solid gray;
@@ -171,20 +171,24 @@ nav {
 	}
 }
 
+.body-text {
+  padding-left: 1.5em;
+
+  a {
+    color: #0F2859;
+
+    &:hover {
+      color: $dark-purple;
+    }
+  }
+}
+
+.well {
+  background-color: #D4D8EF;
+}
+
 .resume-box {
 	margin-bottom: 2em;
-
-	.body-text {
-		padding-left: 1.5em;
-
-		a {
-			color: #0F2859;
-
-			&:hover {
-				color: $dark-purple;
-			}
-		}
-	}
 
 	.ghost-button {
 		color: $ghost-button;
@@ -207,10 +211,6 @@ nav {
 			background: none;
 			text-decoration: none;
 		}
-	}
-
-	.well {
-		background-color: #D4D8EF;
 	}
 
 	.indent, p {
@@ -244,6 +244,18 @@ nav {
 		-webkit-animation: pulse 1.5s infinite ease-in-out;
 		}
 	}
+}
+
+.speaking-box {
+  .previous-talk-box {
+    padding: 16px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: #ddd;
+    }
+  }
 }
 
 footer {

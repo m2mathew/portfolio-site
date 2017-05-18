@@ -27,8 +27,15 @@ class Navigation extends React.Component {
     const currentPage = Backbone.history.getFragment();
 
     const links = [
-      <li key="home" className={currentPage === '' ? 'active nav-link' : 'nav-link'}><a href="#">home</a></li>,
-      <li key="resume" className={currentPage === 'resume' ? 'active nav-link' : 'nav-link'}><a href="#resume">resume</a></li>
+      <li key="home" className={currentPage === '' ? 'active nav-link' : 'nav-link'}>
+        <a href="#">home</a>
+      </li>,
+      <li key="resume" className={currentPage === 'resume' ? 'active nav-link' : 'nav-link'}>
+        <a href="#resume">resume</a>
+      </li>,
+      <li key="speaking" className={currentPage === 'speaking' ? 'active nav-link' : 'nav-link'}>
+        <a href="#speaking">speaking</a>
+      </li>
     ];
 
     return (
