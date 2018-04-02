@@ -20,10 +20,17 @@ const Speaking = () => (
       <h3 className="well">Previous Talks</h3>
 
       <div className="previous-talk-box">
-        <img src="../../../images/react-101-screenshot.png" width="25%" height="25%" />
+        {/* <img src="../../../images/react-101-screenshot.png" width="25%" height="25%" /> */}
+        <h4>The Iron Yard Guest Speaker</h4>
+        <p>Getting Started with Redux</p>
+        <p>May 2017</p>
+      </div>
+
+      <div className="previous-talk-box">
+        {/* <img src="../../../images/react-101-screenshot.png" width="25%" height="25%" /> */}
         <h4>ReactJS @ The Iron Yard</h4>
         <p>React 101</p>
-        <p>January 10, 2017</p>
+        <p>January 2017</p>
       </div>
     </div>
 
