@@ -33,7 +33,7 @@ nav #menu .active a {
 
 .title {
   width: 100%;
-  margin-top: 4.5em;
+  margin-top: 5em;
   margin-bottom: 0.5em;
   padding: 0.5em auto;
   border-bottom: 6px solid gray; }
@@ -118,14 +118,18 @@ nav #menu .active a {
       text-transform: uppercase;
       margin-bottom: 0.75em; }
 
+.body-text {
+  padding-left: 1.5em; }
+  .body-text a {
+    color: #0F2859; }
+    .body-text a:hover {
+      color: #454174; }
+
+.well {
+  background-color: #D4D8EF; }
+
 .resume-box {
   margin-bottom: 2em; }
-  .resume-box .body-text {
-    padding-left: 1.5em; }
-    .resume-box .body-text a {
-      color: #0F2859; }
-      .resume-box .body-text a:hover {
-        color: #454174; }
   .resume-box .ghost-button {
     color: #4c4c4c;
     background: none;
@@ -145,8 +149,6 @@ nav #menu .active a {
       border: 1px solid #f16529;
       background: none;
       text-decoration: none; }
-  .resume-box .well {
-    background-color: #D4D8EF; }
   .resume-box .indent, .resume-box p {
     padding-left: 2em;
     padding-right: 2em;
@@ -169,6 +171,13 @@ nav #menu .active a {
       text-decoration: none; }
     .resume-box #resume-button:hover, .resume-box #resume-button:focus {
       -webkit-animation: pulse 1.5s infinite ease-in-out; }
+
+.speaking-box .previous-talk-box {
+  padding: 16px;
+  border: 1px solid #fff;
+  border-radius: 4px; }
+  .speaking-box .previous-talk-box:hover {
+    background-color: #ddd; }
 
 footer {
   background-color: #CCC4EA;
