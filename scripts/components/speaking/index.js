@@ -4,7 +4,6 @@ const React = require('react');
 // Internal
 const Title = require('../Title');
 
-
 // Component Definition
 const Speaking = () => (
   <section className="row speaking-box col-sm-12">
